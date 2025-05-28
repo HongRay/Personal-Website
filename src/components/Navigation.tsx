@@ -1,0 +1,74 @@
+
+import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { Github, Linkedin, Mail, Download } from 'lucide-react';
+
+const Navigation = () => {
+  const location = useLocation();
+
+  const navItems = [
+    { name: 'Home', path: '/' },
+    { name: 'About', path: '/about' },
+    { name: 'Skills', path: '/skills' },
+    { name: 'Projects', path: '/projects' },
+    { name: 'Experience', path: '/experience' },
+  ];
+
+  const socialLinks = [
+    { icon: <Github className="w-5 h-5" />, href: 'https://github.com/johndoe', label: 'GitHub' },
+    { icon: <Linkedin className="w-5 h-5" />, href: 'https://linkedin.com/in/johndoe', label: 'LinkedIn' },
+    { icon: <Mail className="w-5 h-5" />, href: 'mailto:john.doe@email.com', label: 'Email' },
+  ];
+
+  return (
+    <nav className="bg-white shadow-lg sticky top-0 z-50">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="flex justify-between items-center h-16">
+          <div className="flex items-center space-x-8">
+            <Link to="/" className="text-2xl font-bold text-[#254194] hover:scale-105 transition-transform duration-300">
+              John Doe
+            </Link>
+            <div className="hidden md:flex space-x-6">
+              {navItems.map((item) => (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  className={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 transform hover:scale-105 ${
+                    location.pathname === item.path
+                      ? 'text-[#254194] bg-gray-100 shadow-sm'
+                      : 'text-gray-700 hover:text-[#254194] hover:bg-gray-50'
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </div>
+          </div>
+          
+          <div className="flex items-center space-x-4">
+            <div className="hidden md:flex items-center space-x-3">
+              {socialLinks.map((link, index) => (
+                <a
+                  key={index}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-[#254194] transition-all duration-300 transform hover:scale-110"
+                  aria-label={link.label}
+                >
+                  {link.icon}
+                </a>
+              ))}
+            </div>
+            <button className="bg-[#254194] text-white px-4 py-2 rounded-lg font-medium hover:bg-[#1a2d6b] transition-all duration-300 flex items-center space-x-2 transform hover:scale-105 hover:shadow-lg">
+              <Download className="w-4 h-4" />
+              <span>Resume</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default Navigation;
