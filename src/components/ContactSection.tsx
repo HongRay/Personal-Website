@@ -1,28 +1,29 @@
 
 import React from 'react';
 import { Github, Linkedin, Mail } from 'lucide-react';
+import { RESUME_PATH, GITHUB_LINK, LINKEDIN_LINK, EMAIL_LINK} from "@/lib/links";
 
 const ContactSection = () => {
   return (
-    <section className="py-8 bg-[#254194] text-white">
+    <section id = "contact" className="py-8 bg-[#254194] text-white">
       <div className="max-w-4xl mx-auto px-6">
         <div className="text-center mb-6">
           <h2 className="text-2xl font-bold mb-2">Let's Connect</h2>
           <p className="text-gray-200">
-            Ready to discuss opportunities or collaborate on projects?
+            Lets collaborate and explore new opportunities together!
           </p>
         </div>
 
         <div className="flex items-center justify-center gap-6">
           <a
-            href="mailto:john.doe@email.com"
-            className="flex items-center space-x-2 bg-white text-[#254194] px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
+            href= {EMAIL_LINK}
+            className="flex items-center space-x-2 border-2 border-white text-white px-4 py-2 rounded-lg font-semibold hover:bg-white hover:text-[#254194] transition-all duration-300 transform hover:scale-105"
           >
             <Mail className="w-4 h-4" />
             <span>Email</span>
           </a>
           <a
-            href="https://linkedin.com/in/johndoe"
+            href= {LINKEDIN_LINK}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center space-x-2 border-2 border-white text-white px-4 py-2 rounded-lg font-semibold hover:bg-white hover:text-[#254194] transition-all duration-300 transform hover:scale-105"
@@ -31,7 +32,7 @@ const ContactSection = () => {
             <span>LinkedIn</span>
           </a>
           <a
-            href="https://github.com/johndoe"
+            href= {GITHUB_LINK}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center space-x-2 border-2 border-white text-white px-4 py-2 rounded-lg font-semibold hover:bg-white hover:text-[#254194] transition-all duration-300 transform hover:scale-105"

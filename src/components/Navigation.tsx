@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Github, Linkedin, Mail, Download } from 'lucide-react';
+import { RESUME_PATH, GITHUB_LINK, LINKEDIN_LINK, EMAIL_LINK} from "@/lib/links";
 
 const Navigation = () => {
   const location = useLocation();
@@ -15,9 +16,9 @@ const Navigation = () => {
   ];
 
   const socialLinks = [
-    { icon: <Github className="w-5 h-5" />, href: 'https://github.com/johndoe', label: 'GitHub' },
-    { icon: <Linkedin className="w-5 h-5" />, href: 'https://linkedin.com/in/johndoe', label: 'LinkedIn' },
-    { icon: <Mail className="w-5 h-5" />, href: 'mailto:john.doe@email.com', label: 'Email' },
+    { icon: <Github className="w-5 h-5" />, href: GITHUB_LINK, label: 'GitHub' },
+    { icon: <Linkedin className="w-5 h-5" />, href: LINKEDIN_LINK, label: 'LinkedIn' },
+    { icon: <Mail className="w-5 h-5" />,href: EMAIL_LINK, label: 'Email'},
   ];
 
   return (
@@ -26,7 +27,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-8">
             <Link to="/" className="text-2xl font-bold text-[#254194] hover:scale-105 transition-transform duration-300">
-              John Doe
+              Hong Ray
             </Link>
             <div className="hidden md:flex space-x-6">
               {navItems.map((item) => (
@@ -60,10 +61,14 @@ const Navigation = () => {
                 </a>
               ))}
             </div>
-            <button className="bg-[#254194] text-white px-4 py-2 rounded-lg font-medium hover:bg-[#1a2d6b] transition-all duration-300 flex items-center space-x-2 transform hover:scale-105 hover:shadow-lg">
-              <Download className="w-4 h-4" />
-              <span>Resume</span>
-            </button>
+            <a
+                href={RESUME_PATH}
+                download
+                className="bg-[#254194] text-white px-4 py-2 rounded-lg font-medium hover:bg-[#1a2d6b] transition-all duration-300 flex items-center space-x-2 transform hover:scale-105 hover:shadow-lg"
+              >
+                <Download className="w-4 h-4" />
+                <span>Resume</span>
+              </a>
           </div>
         </div>
       </div>
