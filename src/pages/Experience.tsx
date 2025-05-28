@@ -49,6 +49,10 @@ const Experience = () => {
             </p>
           </div>
 
+          <div className="text-center mt-12 pb-10">
+            <p className="text-gray-600 italic">Click on any experience to view detailed information</p>
+          </div>
+
           <div className="space-y-8">
             {experiences.map((experience, index) => (
               <Link 
@@ -94,10 +98,6 @@ const Experience = () => {
                 </div>
               </Link>
             ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <p className="text-gray-600 italic">Click on any experience to view detailed information</p>
           </div>
         </div>
       </section>
