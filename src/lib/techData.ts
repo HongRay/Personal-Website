@@ -1,8 +1,8 @@
 export const techIcons = [
   { name: 'React', icon: '⚛️', delay: '0s', duration: '4.3s' },
-  { name: 'HTML5', icon: '🌐', delay: '0.5s', duration: '5.7s' },
-  { name: 'CSS3', icon: '🎨', delay: '1s', duration: '4.8s' },
-  { name: 'Tailwind CSS', icon: '💨', delay: '1.5s', duration: '5.1s' },
+  { name: 'HTML5', icon: '🌐', delay: '0.5s', duration: '5.2s' },
+  { name: 'CSS', icon: '🎨', delay: '1s', duration: '4.6s' },
+  { name: 'Tailwind CSS', icon: '💨', delay: '1.5s', duration: '5.0s' },
   { name: 'TypeScript', icon: '📘', delay: '2s', duration: '4.2s' },
   { name: 'Node.js', icon: '🟢', delay: '2.5s', duration: '5.6s' },
   { name: 'Next.js', icon: '🚀', delay: '3s', duration: '4.9s' },
@@ -13,15 +13,20 @@ export const techIcons = [
   { name: 'PostgreSQL', icon: '🐘', delay: '5.5s', duration: '4.7s' },
   { name: 'Git', icon: '📚', delay: '6s', duration: '5.9s' },
   { name: 'Docker', icon: '🐳', delay: '6.5s', duration: '4.1s' },
-  { name: 'AWS', icon: '☁️', delay: '7s', duration: '5.5s' },
+  { name: 'FastAPI', icon: '☁️', delay: '7s', duration: '5.5s' },
   { name: 'JavaScript', icon: '🟨', delay: '7.5s', duration: '4.4s' },
-  { name: 'Redux', icon: '🔄', delay: '8s', duration: '5.2s' },
-  { name: 'Firebase', icon: '🔥', delay: '8.5s', duration: '5.8s' },
-  { name: 'Linux', icon: '🐧', delay: '9s', duration: '4.0s' },
+  { name: 'Java', icon: '🐧', delay: '8s', duration: '4.5s' },
+  { name: '.Net', icon: '🐧', delay: '8.5s', duration: '5.0s' },
+  { name: 'Redux', icon: '🔄', delay: '9s', duration: '5.2s' },
+  { name: 'R', icon: '🔥', delay: '9.5s', duration: '5.8s' },
+  { name: 'GO', icon: '🐧', delay: '10s', duration: '4.0s' },
+  { name: 'Python', icon: '🐧', delay: '10.5s', duration: '4.3s' },
+  { name: 'gRPC', icon: '🐧', delay: '11s', duration: '4.6s' },
 ];
 
+
 export const positions = [
-  { left: '10%', top: '15%' },
+  { left: '40%', top: '15%' },
   { left: '85%', top: '20%' },
   { left: '20%', top: '35%' },
   { left: '75%', top: '45%' },
@@ -40,4 +45,9 @@ export const positions = [
   { left: '88%', top: '50%' },
   { left: '50%', top: '30%' },
   { left: '8%', top: '25%' },
+  { left: '45%', top: '85%' },
+  { left: '20%', top: '10%' },
+  { left: '60%', top: '40%' },
+  { left: '78%', top: '75%' },
+  { left: '33%', top: '60%' },
 ];
