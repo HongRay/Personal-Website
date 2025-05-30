@@ -1,5 +1,5 @@
 export const techIcons = [
-  { name: 'React', icon: '⚛️', delay: '0s', duration: '4.3s' },
+  { name: 'React.js', icon: '⚛️', delay: '0s', duration: '4.3s' },
   { name: 'HTML5', icon: '🌐', delay: '0.5s', duration: '5.2s' },
   { name: 'CSS', icon: '🎨', delay: '1s', duration: '4.6s' },
   { name: 'Tailwind CSS', icon: '💨', delay: '1.5s', duration: '5.0s' },
@@ -7,7 +7,7 @@ export const techIcons = [
   { name: 'Node.js', icon: '🟢', delay: '2.5s', duration: '5.6s' },
   { name: 'Next.js', icon: '🚀', delay: '3s', duration: '4.9s' },
   { name: 'Python', icon: '🐍', delay: '3.5s', duration: '4.5s' },
-  { name: 'Java', icon: '☕', delay: '4s', duration: '5.3s' },
+  { name: 'Java', icon: '🐍', delay: '4s', duration: '5.3s' },
   { name: 'C++', icon: '⚡', delay: '4.5s', duration: '4.6s' },
   { name: 'C#', icon: '🍃', delay: '5s', duration: '5.0s' },
   { name: 'PostgreSQL', icon: '🐘', delay: '5.5s', duration: '4.7s' },
@@ -15,13 +15,12 @@ export const techIcons = [
   { name: 'Docker', icon: '🐳', delay: '6.5s', duration: '4.1s' },
   { name: 'FastAPI', icon: '☁️', delay: '7s', duration: '5.5s' },
   { name: 'JavaScript', icon: '🟨', delay: '7.5s', duration: '4.4s' },
-  { name: 'Java', icon: '🐧', delay: '8s', duration: '4.5s' },
+  { name: 'gRPC', icon: '🐧', delay: '8s', duration: '4.5s' },
   { name: '.Net', icon: '🐧', delay: '8.5s', duration: '5.0s' },
   { name: 'Redux', icon: '🔄', delay: '9s', duration: '5.2s' },
   { name: 'R', icon: '🔥', delay: '9.5s', duration: '5.8s' },
   { name: 'GO', icon: '🐧', delay: '10s', duration: '4.0s' },
   { name: 'Python', icon: '🐧', delay: '10.5s', duration: '4.3s' },
-  { name: 'gRPC', icon: '🐧', delay: '11s', duration: '4.6s' },
 ];
 
 
@@ -34,7 +33,7 @@ export const positions = [
   { left: '80%', top: '65%' },
   { left: '25%', top: '80%' },
   { left: '70%', top: '85%' },
-  { left: '5%', top: '40%' },
+  { left: '50%', top: '40%' },
   { left: '90%', top: '35%' },
   { left: '30%', top: '25%' },
   { left: '65%', top: '15%' },
@@ -49,5 +48,4 @@ export const positions = [
   { left: '20%', top: '10%' },
   { left: '60%', top: '40%' },
   { left: '78%', top: '75%' },
-  { left: '33%', top: '60%' },
 ];

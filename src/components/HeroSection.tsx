@@ -9,14 +9,21 @@ const HeroSection = () => {
       <AnimatedTechStack />
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
         <div className="animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent max-w-4xl pb-2 animate-float-updown">
-            Hi! I'm Hong Ray
-          </h1>
+          <div className="animate-float-updown">
+            <img
+              src="/Profile pic.jpg"
+              alt="Hong Ray"
+              className="mx-auto mb-6 w-[344px] h-[344px] rounded-full object-cover object-[0_80%] border-4 border-white shadow-md"
+            />
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent max-w-4xl pb-2">
+              Hi! I'm Hong Ray
+            </h1>
+          </div>
           <h2 className="text-2xl md:text-3xl mb-8 text-gray-200">
             Computer Science Student & Future Software Engineer
           </h2>
           <p className="text-lg md:text-xl mb-12 text-gray-300 max-w-2xl mx-auto leading-relaxed">
-            I am currently a Computer Science student at NUS. I'm passionate about creating fun and innovative solutions through code - Try popping the floating icons in the background to see for yourself!
+            I am currently a Computer Science student at NUS. I'm passionate about creating fun and innovative solutions through code - Try clicking on the floating icons in the background to see for yourself!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
