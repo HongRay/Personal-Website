@@ -27,7 +27,7 @@ const Index = () => {
         </div>
       </section>
       
-      <ContactSection />
+      <ContactSection isIndexPage/>
     </div>
   );
 };

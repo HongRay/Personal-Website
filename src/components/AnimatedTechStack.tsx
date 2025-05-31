@@ -47,7 +47,7 @@ const AnimatedTechStack = () => {
               className={`w-14 h-14 transition-all duration-300 ${
                 clickedIcons.has(index) ? 'brightness-[1.5]' : ''
               }`}
-              style={{ filter: clickedIcons.has(index) ? 'drop-shadow(0 0 20px white)' : 'none' }}
+              style={{ filter: clickedIcons.has(index) ? 'drop-shadow(0 0 20px blue)' : 'none' }}
               draggable={false}
             />
           </div>
