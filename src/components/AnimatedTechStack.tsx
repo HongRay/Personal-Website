@@ -31,7 +31,7 @@ const AnimatedTechStack = () => {
           }}
         >
           <div 
-            className={`text-5xl opacity-20 hover:opacity-60 transition-opacity duration-300 cursor-pointer pointer-events-auto select-none inline-block ${
+            className={`text-5xl opacity-30 hover:opacity-60 transition-opacity duration-300 cursor-pointer pointer-events-auto select-none inline-block ${
               clickedIcons.has(index) ? 'animate-pop' : ''
             }`}
             onClick={() => handleIconClick(index)}
@@ -41,7 +41,15 @@ const AnimatedTechStack = () => {
               height: 'fit-content',
             }}
           >
-            {tech.icon}
+            <img
+              src={tech.icon}
+              alt={tech.name}
+              className={`w-14 h-14 transition-all duration-300 ${
+                clickedIcons.has(index) ? 'brightness-[1.5]' : ''
+              }`}
+              style={{ filter: clickedIcons.has(index) ? 'drop-shadow(0 0 20px white)' : 'none' }}
+              draggable={false}
+            />
           </div>
         </div>
       ))}

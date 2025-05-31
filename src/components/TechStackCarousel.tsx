@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, type CarouselApi } from "@/components/ui/carousel";
 
-const TechStackCarousel = () => {
+const TechStackCarousel = ({ isIndexPage = false }: { isIndexPage?: boolean }) => {
   const [api, setApi] = React.useState<CarouselApi>();
 
   useEffect(() => {
@@ -64,7 +64,8 @@ const TechStackCarousel = () => {
           {techStacks.map((stack, index) => (
             <CarouselItem key={index}>
               <div className="p-6">
-                <h3 className="text-2xl font-semibold text-[#254194] mb-6 text-center">
+                <h3 className="text-2xl font-semibold mb-6 text-center ${isIndexPage ? 'text-white' : 'text-[#254194]'}`}>
+                  {stack.category}" >
                   {stack.category}
                 </h3>
                 <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
@@ -82,8 +83,8 @@ const TechStackCarousel = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious className={isIndexPage ? "bg-white text-[#254194]" : ""}/>
+        <CarouselNext className={isIndexPage ? "bg-white text-[#254194]" : ""}/>
       </Carousel>
     </div>
   );
