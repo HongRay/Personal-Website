@@ -6,7 +6,7 @@ const AboutSection = () => {
     { icon: <Bike className="w-8 h-8" />, title: 'Cycling', description: 'Love exploring trails and city routes' },
     { icon: <Mountain className="w-8 h-8" />, title: 'Hiking', description: 'Enjoy challenging mountain trails and national parks' },
     { icon: <Waves className="w-8 h-8" />, title: 'Kayaking', description: 'Passionate about water sports and water adventure' },
-    { icon: <Headset className="w-8 h-8" />, title: 'Gaming', description: 'Never say no to a good game sessions with friends' },
+    { icon: <Headset className="w-8 h-8" />, title: 'Gaming', description: 'Never say no to a good gaming session with friends' },
   ];
 
   return (
