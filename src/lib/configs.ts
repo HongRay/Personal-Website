@@ -4,7 +4,7 @@ export const LINKEDIN_LINK = "https://www.linkedin.com/in/nghongray/";
 export const EMAIL_LINK = "mailto:hongray99@email.com";
 
 export const techIcons = [
-  { name: 'React.js', icon: '/icons/react.png', delay: '0s', duration: '4.3s' },
+  { name: 'React.js', icon: '/icons/react.svg', delay: '0s', duration: '4.3s' },
   { name: 'HTML5', icon: '/icons/HTML.png', delay: '0.5s', duration: '5.2s' },
   { name: 'CSS', icon: '/icons/CSS.png', delay: '1s', duration: '4.6s' },
   { name: 'Tailwind CSS', icon: '/icons/tailwind.png', delay: '1.5s', duration: '5.0s' },
@@ -20,7 +20,7 @@ export const techIcons = [
   { name: 'Docker', icon: '/icons/Docker.png', delay: '6.5s', duration: '4.1s' },
   { name: 'Latex', icon: '/icons/Latex.png', delay: '7s', duration: '5.5s' },
   { name: 'JavaScript', icon: '/icons/JS.png', delay: '7.5s', duration: '4.4s' },
-  { name: 'gRPC', icon: '/icons/Grpc.png', delay: '8s', duration: '4.5s' },
+  { name: 'gRPC', icon: '/icons/grpc.svg', delay: '8s', duration: '4.5s' },
   { name: '.Net', icon: '/icons/DotNet.png', delay: '8.5s', duration: '5.0s' },
   { name: 'Redux', icon: '/icons/redux.png', delay: '9s', duration: '5.2s' },
   { name: 'R', icon: '/icons/R.png', delay: '9.5s', duration: '5.8s' },
@@ -57,4 +57,46 @@ export const positions = [
   { left: '22%', top: '49%' },  // Next.js
   { left: '82%', top: '70%' },  // OpenCV
   { left: '80%', top: '10%' },  // Vite
+];
+
+export const techStacks = [
+  {
+    category: 'Frontend',
+    technologies: [
+      { name: 'React.js', placeholder: '/icons/react.svg' },
+      { name: 'HTML5', placeholder: '/icons/HTML.png' },
+      { name: 'CSS', placeholder: '/icons/CSS.png' },
+      { name: 'Tailwind CSS', placeholder: '/icons/tailwind.png' },
+      { name: 'TypeScript', placeholder: '/icons/TS.png' },
+      { name: 'JavaScript', placeholder: '/icons/JS.png' },
+      { name: 'Next.js', placeholder: '/icons/nextjs.svg' },
+      { name: 'Redux', placeholder: '/icons/redux.png' },
+      { name: 'Vite', placeholder: '/icons/Vite.png' }
+    ]
+  },
+  {
+    category: 'Backend',
+    technologies: [
+      { name: 'Node.js', placeholder: '/icons/NodeJs.png' },
+      { name: 'Python', placeholder: '/icons/python.png' },
+      { name: 'Java', placeholder: '/icons/java.png' },
+      { name: 'C++', placeholder: '/icons/CPlus.png' },
+      { name: 'C#', placeholder: '/icons/CSharp.png' },
+      { name: 'GO', placeholder: '/icons/Golang.png' },
+      { name: '.Net', placeholder: '/icons/DotNet.png' },
+      { name: 'gRPC', placeholder: '/icons/grpc.svg' }
+    ]
+  },
+  {
+    category: 'Database & Tools',
+    technologies: [
+      { name: 'PostgreSQL', placeholder: '/icons/postgress.png' },
+      { name: 'Git', placeholder: '/icons/Git.png' },
+      { name: 'Docker', placeholder: '/icons/Docker.png' },
+      { name: 'Vim Studio', placeholder: '/icons/vim.png' },
+      { name: 'Latex', placeholder: '/icons/Latex.png' },
+      { name: 'OpenCV', placeholder: '/icons/opencv.svg' },
+      { name: 'R', placeholder: '/icons/R.png' }
+    ]
+  }
 ];

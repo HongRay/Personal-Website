@@ -49,11 +49,11 @@ const Experience = () => {
             </p>
           </div>
 
-          <div className="text-center mt-12 pb-10">
+          <div className="text-center mt-12 pb-10 animate-fade-in">
             <p className="text-gray-600 italic">Click on any experience to view detailed information</p>
           </div>
 
-          <div className="space-y-8">
+          <div className="space-y-8 animate-fade-in">
             {experiences.map((experience, index) => (
               <Link 
                 key={experience.id}

@@ -8,8 +8,10 @@ const About = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
-      <AboutSection />
-      <ContactSection />
+      <div className="animate-fade-in">
+        <AboutSection />
+        <ContactSection />
+      </div>
     </div>
   );
 };
