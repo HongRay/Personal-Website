@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { techIcons, positions } from '@/lib/techData';  
+import { techIcons, positions } from '@/lib/configs';  
 
 const AnimatedTechStack = () => {
   const [clickedIcons, setClickedIcons] = useState<Set<number>>(new Set());

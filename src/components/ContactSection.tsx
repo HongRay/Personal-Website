@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Github, Linkedin, Mail } from 'lucide-react';
-import { RESUME_PATH, GITHUB_LINK, LINKEDIN_LINK, EMAIL_LINK} from "@/lib/links";
+import { RESUME_PATH, GITHUB_LINK, LINKEDIN_LINK, EMAIL_LINK} from "@/lib/configs";
 
 const ContactSection = ({ isIndexPage = false }: { isIndexPage?: boolean }) => {
   return (

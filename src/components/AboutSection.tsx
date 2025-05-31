@@ -1,11 +1,12 @@
 import React from 'react';
-import { Bike, Mountain, Waves } from 'lucide-react';
+import { Bike, Mountain, Waves, Headset } from 'lucide-react';
 
 const AboutSection = () => {
   const interests = [
     { icon: <Bike className="w-8 h-8" />, title: 'Cycling', description: 'Love exploring trails and city routes' },
-    { icon: <Mountain className="w-8 h-8" />, title: 'Hiking', description: 'Enjoy challenging mountain trails' },
-    { icon: <Waves className="w-8 h-8" />, title: 'Kayaking', description: 'Passionate about water sports' },
+    { icon: <Mountain className="w-8 h-8" />, title: 'Hiking', description: 'Enjoy challenging mountain trails and national parks' },
+    { icon: <Waves className="w-8 h-8" />, title: 'Kayaking', description: 'Passionate about water sports and water adventure' },
+    { icon: <Headset className="w-8 h-8" />, title: 'Gaming', description: 'Never say no to a good game sessions with friends' },
   ];
 
   return (
@@ -21,16 +22,17 @@ const AboutSection = () => {
             <p className="text-lg text-gray-700 leading-relaxed">
               I'm a dedicated Computer Science student with a passion for software engineering and technology innovation. 
               My journey in programming started with curiosity and has evolved into a deep commitment to creating 
-              meaningful digital experiences.
+              meaningful and fun digital experiences!
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
               When I'm not coding, you'll find me exploring the outdoors through cycling, hiking, or kayaking. 
               I believe that staying active and experiencing nature helps me bring fresh perspectives to my work 
-              and maintains the creativity essential for problem-solving in software development.
+              and maintains the creativity essential for problem-solving in software development. Additionally, I like to play
+              computer games as well!
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
               I'm always eager to learn new technologies and take on challenging projects that push my boundaries 
-              as a developer. My goal is to contribute to innovative software solutions that make a positive impact.
+              as a developer. My seek to contribute to innovative software solutions that make a positive impact for society!
             </p>
           </div>
           

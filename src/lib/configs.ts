@@ -1,3 +1,8 @@
+export const RESUME_PATH = "/HongRay Resume.pdf";
+export const GITHUB_LINK = "https://github.com/HongRay";
+export const LINKEDIN_LINK = "https://www.linkedin.com/in/nghongray/";
+export const EMAIL_LINK = "mailto:hongray99@email.com";
+
 export const techIcons = [
   { name: 'React.js', icon: '/icons/react.png', delay: '0s', duration: '4.3s' },
   { name: 'HTML5', icon: '/icons/HTML.png', delay: '0.5s', duration: '5.2s' },
@@ -26,7 +31,6 @@ export const techIcons = [
   { name: 'Vite', icon: '/icons/Vite.png', delay: '12s', duration: '7s' },
 ];
 
-
 export const positions = [
   { left: '25%', top: '10%' },  // React.js
   { left: '90%', top: '12%' },  // HTML5
@@ -54,5 +58,3 @@ export const positions = [
   { left: '82%', top: '70%' },  // OpenCV
   { left: '80%', top: '10%' },  // Vite
 ];
-
-
