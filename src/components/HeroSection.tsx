@@ -1,7 +1,6 @@
 
 import React from 'react';
 import AnimatedTechStack from './AnimatedTechStack';
-import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   return (
@@ -26,12 +25,12 @@ const HeroSection = () => {
             I am currently a Computer Science student at NUS. I'm passionate about creating fun and innovative solutions through code - Try clicking on the floating icons in the background to see for yourself!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              to="/projects"
+            <a
+              href="#projects"
               className="bg-white text-[#254194] px-8 py-3 rounded-lg font-semibold hover:bg-transparent hover:text-white border-2 hover:border-white transition-all duration-300 transform hover:scale-105 text-center pointer-events-auto"
             >
               View My Work
-            </Link>
+            </a>
             <a
               href="#contact"
               className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-[#254194] transition-all duration-300 transform hover:scale-105 text-center pointer-events-auto"
@@ -39,10 +38,8 @@ const HeroSection = () => {
               Contact Me
             </a>
           </div>
+          <div className="mt-12 animate-bounce text-white text-2xl">↓</div>
         </div>
-      </div>
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="text-white text-2xl">↓</div>
       </div>
     </section>
   );

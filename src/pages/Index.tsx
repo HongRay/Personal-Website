@@ -5,6 +5,7 @@ import HeroSection from '../components/HeroSection';
 import TechStackCarousel from '../components/TechStackCarousel';
 import ContactSection from '../components/ContactSection';
 import AboutSection from '@/components/AboutSection';
+import ProjectSection from '../components/ProjectSection';
 
 const Index = () => {
   return (
@@ -22,11 +23,10 @@ const Index = () => {
               Here are the technologies and tools I've been working with during my Computer Science studies
             </p>
           </div>
-
           <TechStackCarousel isIndexPage/>
         </div>
       </section>
-      
+      <ProjectSection />
       <ContactSection isIndexPage/>
     </div>
   );
