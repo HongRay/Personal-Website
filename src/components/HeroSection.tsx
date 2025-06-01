@@ -7,7 +7,7 @@ const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-[#254194] to-[#1a2d6b] text-white overflow-hidden">
       <AnimatedTechStack />
-      <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
+      <div className="relative z-10 text-center max-w-4xl mx-auto px-6 pointer-events-none">
         <div className="animate-fade-in">
           <div className="animate-float-updown">
             <img
@@ -28,13 +28,13 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/projects"
-              className="bg-white text-[#254194] px-8 py-3 rounded-lg font-semibold hover:bg-transparent hover:text-white border-2 hover:border-white transition-all duration-300 transform hover:scale-105 text-center"
+              className="bg-white text-[#254194] px-8 py-3 rounded-lg font-semibold hover:bg-transparent hover:text-white border-2 hover:border-white transition-all duration-300 transform hover:scale-105 text-center pointer-events-auto"
             >
               View My Work
             </Link>
             <a
               href="#contact"
-              className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-[#254194] transition-all duration-300 transform hover:scale-105 text-center"
+              className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-[#254194] transition-all duration-300 transform hover:scale-105 text-center pointer-events-auto"
             >
               Contact Me
             </a>

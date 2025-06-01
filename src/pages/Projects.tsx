@@ -2,34 +2,9 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
 import ContactSection from '../components/ContactSection';
+import { projectDetails } from '@/lib/info';
 
 const Projects = () => {
-  const projects = [
-    {
-      title: 'E-Commerce Platform',
-      description: 'Full-stack web application built with React and Node.js...',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe API'],
-      image: '🛍️',
-      viewLink: 'https://example.com/ecommerce',
-      codeLink: 'https://github.com/youruser/ecommerce'
-    },
-    {
-      title: 'Task Management App',
-      description: 'Responsive web application for project management...',
-      technologies: ['TypeScript', 'React', 'Firebase', 'Material-UI'],
-      image: '📋',
-      viewLink: 'https://example.com/taskapp',
-      codeLink: 'https://github.com/youruser/taskapp'
-    },
-    {
-      title: 'Weather Analytics Dashboard',
-      description: 'Data visualization dashboard..ddddddddddddddddddddddddddddddddddddddddasdasdassssssssssssssssssssssssssssssssssssdddddddddddd.',
-      technologies: ['Python', 'React', 'Chart.js', 'Weather API'],
-      image: '🌤️',
-      viewLink: 'https://example.com/weatherdashboard',
-      codeLink: 'https://github.com/youruser/weatherdashboard'
-    }
-  ];
 
   return (
     <div className="min-h-screen">
@@ -45,7 +20,7 @@ const Projects = () => {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {projects.map((project, index) => (
+              {projectDetails.map((project, index) => (
                 <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
                   <div className="p-6">
                     <div className="text-6xl mb-4 text-center">{project.image}</div>
