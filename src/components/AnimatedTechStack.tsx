@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { techIcons, positions } from '@/lib/configs';  
 
-const AnimatedTechStack = () => {
+const AnimatedTechStack = ({ className = '' }: { className?: string }) => {
   const [clickedIcons, setClickedIcons] = useState<Set<number>>(new Set());
   
   const handleIconClick = (index: number) => {
@@ -18,7 +18,7 @@ const AnimatedTechStack = () => {
   };
 
   return (
-    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+    <div className={`absolute inset-0 overflow-hidden pointer-events-none ${className}`}>
       {techIcons.map((tech, index) => (
         <div
           key={tech.name}

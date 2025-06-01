@@ -6,6 +6,9 @@ import TechStackCarousel from '../components/TechStackCarousel';
 import ContactSection from '../components/ContactSection';
 import AboutSection from '@/components/AboutSection';
 import ProjectSection from '../components/ProjectSection';
+import ExperienceSection from '../components/ExperienceSection';
+import AnimatedTechStack from '@/components/AnimatedTechStack';
+
 
 const Index = () => {
   return (
@@ -14,8 +17,9 @@ const Index = () => {
       <HeroSection />
       <AboutSection />
       {/* Skills Section */}
-      <section className="py-20 bg-gradient-to-br bg-[#254194] text-white">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="relative py-20 bg-gradient-to-br bg-[#254194] text-white overflow-hidden pointer-events-none">
+        <AnimatedTechStack className="absolute inset-0 z-0" />
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-white mb-4">Technical Skills</h2>
             <div className="w-24 h-1 bg-[#254194] mx-auto mb-6"></div>
@@ -23,10 +27,13 @@ const Index = () => {
               Here are the technologies and tools I've been working with during my Computer Science studies
             </p>
           </div>
-          <TechStackCarousel isIndexPage/>
+          <div className="pointer-events-auto">
+            <TechStackCarousel isIndexPage />
+          </div>
         </div>
       </section>
       <ProjectSection />
+      <ExperienceSection isIndexPage/>
       <ContactSection isIndexPage/>
     </div>
   );

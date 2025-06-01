@@ -1,109 +1,37 @@
 
 import React from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useLocation } from 'react-router-dom';
 import { ArrowLeft, Calendar, MapPin, ExternalLink } from 'lucide-react';
 import Navigation from '../components/Navigation';
 import ContactSection from '../components/ContactSection';
+import { experiencesDetails } from '@/lib/info';
+import { useEffect } from 'react';
 
 const ExperienceDetail = () => {
+  const location = useLocation();
+  const fromIndex = location.state?.fromIndex;
   const { id } = useParams<{ id: string }>();
 
-  const experiences = [
-    {
-      id: '1',
-      title: 'Software Engineering Intern',
-      company: 'TechCorp Solutions',
-      duration: 'June 2024 - August 2024',
-      location: 'San Francisco, CA',
-      description: 'Developed and maintained web applications using React and Node.js. Collaborated with senior developers on feature implementation and bug fixes. Participated in code reviews and agile development processes.',
-      logo: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=100&h=100&fit=crop',
-      skills: ['React', 'Node.js', 'MongoDB', 'Git'],
-      achievements: [
-        'Built a user dashboard that improved customer engagement by 35%',
-        'Optimized database queries, reducing load times by 50%',
-        'Collaborated with a team of 8 developers using Agile methodology',
-        'Wrote comprehensive unit tests achieving 90% code coverage'
-      ],
-      projects: [
-        {
-          name: 'Customer Analytics Dashboard',
-          description: 'Real-time analytics dashboard for tracking user behavior and engagement metrics',
-          technologies: ['React', 'D3.js', 'Node.js', 'PostgreSQL']
-        },
-        {
-          name: 'API Performance Optimization',
-          description: 'Refactored legacy APIs to improve response times and scalability',
-          technologies: ['Node.js', 'Express', 'Redis', 'Docker']
-        }
-      ]
-    },
-    {
-      id: '2',
-      title: 'Junior Developer',
-      company: 'StartupXYZ',
-      duration: 'January 2024 - May 2024',
-      location: 'Austin, TX',
-      description: 'Built responsive web interfaces and implemented RESTful APIs. Worked closely with design team to translate mockups into functional components.',
-      logo: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=100&h=100&fit=crop',
-      skills: ['TypeScript', 'React', 'Express.js', 'PostgreSQL'],
-      achievements: [
-        'Developed mobile-first responsive designs for 5+ client projects',
-        'Implemented authentication system used by 1000+ users',
-        'Reduced bundle size by 40% through code splitting and optimization',
-        'Mentored 2 junior interns in web development best practices'
-      ],
-      projects: [
-        {
-          name: 'E-commerce Platform',
-          description: 'Full-stack e-commerce solution with payment integration and inventory management',
-          technologies: ['React', 'TypeScript', 'Express.js', 'Stripe API']
-        },
-        {
-          name: 'Real-time Chat Application',
-          description: 'WebSocket-based chat application with file sharing capabilities',
-          technologies: ['Socket.io', 'React', 'Node.js', 'MongoDB']
-        }
-      ]
-    },
-    {
-      id: '3',
-      title: 'Frontend Developer',
-      company: 'WebDev Agency',
-      duration: 'September 2023 - December 2023',
-      location: 'Remote',
-      description: 'Created modern, responsive websites for various clients. Implemented interactive features and animations.',
-      logo: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=100&h=100&fit=crop',
-      skills: ['HTML', 'CSS', 'JavaScript', 'Tailwind CSS'],
-      achievements: [
-        'Delivered 12+ client websites with 100% on-time completion rate',
-        'Improved website performance scores by average of 60%',
-        'Created reusable component library used across 10+ projects',
-        'Achieved 98% client satisfaction rating'
-      ],
-      projects: [
-        {
-          name: 'Restaurant Booking System',
-          description: 'Online reservation system with calendar integration and SMS notifications',
-          technologies: ['Vue.js', 'Firebase', 'Tailwind CSS', 'Twilio API']
-        },
-        {
-          name: 'Portfolio Showcase Platform',
-          description: 'CMS-powered portfolio platform for creative professionals',
-          technologies: ['Nuxt.js', 'Contentful', 'GSAP', 'Netlify']
-        }
-      ]
-    }
-  ];
+  const experience = experiencesDetails.find(exp => exp.id === id);
+  console.log('fromIndex:', location.state?.fromIndex);
 
-  const experience = experiences.find(exp => exp.id === id);
+  useEffect(() => {
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 0);
+  }, []);
 
   if (!experience) {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-2xl font-bold text-gray-800 mb-4">Experience not found</h1>
-          <Link to="/experience" className="text-[#254194] hover:underline">
-            Back to Experience
+          <Link 
+            to={fromIndex ? '/' : '/experience'}
+            className="inline-flex items-center text-[#254194] hover:underline"
+          >
+            <ArrowLeft className="w-5 h-5 mr-2" />
+            {fromIndex ? 'Back to Home' : 'Back to Experience'}
           </Link>
         </div>
       </div>
@@ -116,11 +44,11 @@ const ExperienceDetail = () => {
         <section className="py-20 bg-gray-50">
           <div className="max-w-4xl mx-auto px-6">
             <Link 
-              to="/experience" 
+              to={fromIndex ? '/' : '/experience'}
               className="inline-flex items-center text-[#254194] hover:text-[#1a2d6b] mb-8 transition-colors duration-300 hover:translate-x-1 transform"
             >
               <ArrowLeft className="w-5 h-5 mr-2" />
-              Back to Experience
+              {fromIndex ? 'Back to Home' : 'Back to Experience'}
             </Link>
 
             <div className="bg-white rounded-xl shadow-lg overflow-hidden animate-fade-in">

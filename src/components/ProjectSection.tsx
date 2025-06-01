@@ -5,7 +5,7 @@ import { projectDetails } from '@/lib/info';
 const Projects = () => {
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-gray-50">
         <section id = "projects" className="py-20 bg-gray-50 ">
           <div className="max-w-6xl mx-auto px-6 animate-fade-in">
             <div className="text-center mb-16">
@@ -18,7 +18,7 @@ const Projects = () => {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {projectDetails.map((project, index) => (
-                <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <div key={index} className="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
                   <div className="p-6">
                     <div className="text-6xl mb-4 text-center">{project.image}</div>
                     <h2 className="text-xl font-semibold text-[#254194] mb-3">{project.title}</h2>
