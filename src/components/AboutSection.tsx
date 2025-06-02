@@ -20,19 +20,21 @@ const AboutSection = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg text-gray-700 leading-relaxed">
-              I'm a dedicated Computer Science student with a passion for software engineering and technology innovation. 
+              I'm a dedicated <span className="text-xl font-semibold">Computer Science student</span> with a passion for software engineering and technology innovation. 
               My journey in programming started with curiosity and has evolved into a deep commitment to creating 
               meaningful and fun digital experiences!
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              When I'm not coding, you'll find me exploring the outdoors through cycling, hiking, or kayaking. 
+              <span className="text-xl italic">When I'm not coding,</span> you'll find me exploring the outdoors through <u>cycling, hiking, or kayaking.</u> 🚴 
               I believe that staying active and experiencing nature helps me bring fresh perspectives to my work 
               and maintains the creativity essential for problem-solving in software development. Additionally, I like to play
-              computer games as well!
+              <strong>computer games</strong> as well! 🎮
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
               I'm always eager to learn new technologies and take on challenging projects that push my boundaries 
-              as a developer. My seek to contribute to innovative software solutions that make a positive impact for society!
+              as a developer. I seek to contribute to innovative software solutions that make a positive impact for society. Additionally, 
+              I am learning <span className="text-xl font-semibold">German</span> too! Initially I believed that learning a programming language would be 
+              similar to learning a spoken language. But I quickly realised its completely <strong>different!</strong> 😂
             </p>
           </div>
           

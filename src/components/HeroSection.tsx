@@ -22,7 +22,9 @@ const HeroSection = () => {
             Computer Science Student & Future Software Engineer
           </h2>
           <p className="text-lg md:text-xl mb-12 text-gray-300 max-w-2xl mx-auto leading-relaxed">
-            I am currently a Computer Science student at NUS. I'm passionate about creating fun and innovative solutions through code - Try clicking on the floating icons in the background to see for yourself!
+            I'm also currently in <span className="italic font-semibold">NUS College</span>, NUS's honours college. 
+            I'm passionate about creating fun and innovative solutions through code - 
+             <span className="text-xl italic font-semibold">Try clicking on the floating icons in the background to see for yourself!</span>
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
