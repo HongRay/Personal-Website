@@ -1,11 +1,13 @@
 
 import React from 'react';
-import { useParams, Link, useLocation } from 'react-router-dom';
+import { useParams, useLocation } from 'react-router-dom';
 import { ArrowLeft, Calendar, MapPin, ExternalLink } from 'lucide-react';
 import Navigation from '../components/Navigation';
 import ContactSection from '../components/ContactSection';
 import { experiencesDetails } from '@/lib/info';
 import { useEffect } from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
+
 
 const ExperienceDetail = () => {
   const location = useLocation();
@@ -44,7 +46,7 @@ const ExperienceDetail = () => {
         <section className="py-20 bg-gray-50">
           <div className="max-w-4xl mx-auto px-6">
             <Link 
-              to={fromIndex ? '/' : '/experience'}
+              to={fromIndex ? '/#experience' : '/experience'}
               className="inline-flex items-center text-[#254194] hover:text-[#1a2d6b] mb-8 transition-colors duration-300 hover:translate-x-1 transform"
             >
               <ArrowLeft className="w-5 h-5 mr-2" />

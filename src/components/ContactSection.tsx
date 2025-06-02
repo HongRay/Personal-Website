@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail, Download } from 'lucide-react';
 import { RESUME_PATH, GITHUB_LINK, LINKEDIN_LINK, EMAIL_LINK} from "@/lib/configs";
 
 const ContactSection = ({ isIndexPage = false }: { isIndexPage?: boolean }) => {
@@ -56,6 +56,18 @@ const ContactSection = ({ isIndexPage = false }: { isIndexPage?: boolean }) => {
           >
             <Github className="w-4 h-4" />
             <span>GitHub</span>
+          </a>
+          <a
+            href={RESUME_PATH}
+            download
+            className={`flex items-center space-x-2 border-2 px-4 py-2 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 ${
+              isIndexPage
+                ? 'border-[#254194] text-[#254194] hover:bg-[#254194] hover:text-white'
+                : 'border-white text-white hover:bg-white hover:text-[#254194]'
+            }`}
+          >
+            <Download className="w-4 h-4" />
+            <span>Resume</span>
           </a>
         </div>
       </div>
