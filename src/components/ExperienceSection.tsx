@@ -7,7 +7,7 @@ import { experiences } from '@/lib/info';
 const Experience = ({ isIndexPage = false }: { isIndexPage?: boolean }) => {
   return (
     <div className="min-h-screen">
-      <section className={`py-20 ${isIndexPage ? 'bg-[#254194]' : 'bg-gray-50'}`}>
+      <section className={`py-20 ${isIndexPage ? 'bg-[#254194] z-0' : 'bg-gray-50'}`}>
         <div className="max-w-6xl mx-auto px-6">
           <div className={`text-center mb-16 animate-fade-in ${isIndexPage ? 'text-white' : ''}`}>
             <h1 className={`text-4xl font-bold mb-4 ${isIndexPage ? 'text-white' : 'text-[#254194]'}`}>Work Experience</h1>

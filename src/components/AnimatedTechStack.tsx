@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { techIcons, positions } from '@/lib/configs';  
+import { techIcons, positions, positionsExperience } from '@/lib/configs';  
 
-const AnimatedTechStack = ({ className = '' }: { className?: string }) => {
+const AnimatedTechStack = ({ className = '', isIndexPage = false }: { className?: string; isIndexPage?: boolean; }) => {
   const [clickedIcons, setClickedIcons] = useState<Set<number>>(new Set());
   
   const handleIconClick = (index: number) => {
@@ -17,6 +17,8 @@ const AnimatedTechStack = ({ className = '' }: { className?: string }) => {
     }, 600); // Duration matches the pop animation
   };
 
+  const currentPositions = isIndexPage ? positionsExperience : positions;
+
   return (
     <div className={`absolute inset-0 overflow-hidden pointer-events-none ${className}`}>
       {techIcons.map((tech, index) => (
@@ -24,8 +26,8 @@ const AnimatedTechStack = ({ className = '' }: { className?: string }) => {
           key={tech.name}
           className="absolute animate-float pointer-events-none"
           style={{
-            left: positions[index]?.left || `${Math.random() * 80 + 10}%`,
-            top: positions[index]?.top || `${Math.random() * 80 + 10}%`,
+            left: currentPositions[index]?.left || `${Math.random() * 80 + 10}%`,
+            top: currentPositions[index]?.top || `${Math.random() * 80 + 10}%`,
             animationDelay: tech.delay,
             animationDuration: tech.duration,
           }}

@@ -59,6 +59,33 @@ export const positions = [
   { left: '80%', top: '10%' },  // Vite
 ];
 
+export const positionsExperience = [
+  { left: '30%', top: '10%' },  // React.js
+  { left: '90%', top: '12%' },  // HTML5
+  { left: '17%', top: '25%' },  // CSS
+  { left: '83%', top: '23%' },  // Tailwind CSS
+  { left: '12%', top: '40%' },  // TypeScript
+  { left: '83%', top: '45%' },  // Node.js
+  { left: '16%', top: '60%' },  // Vim Studio
+  { left: '90%', top: '65%' },  // Python
+  { left: '7%', top: '77%' },  // Java
+  { left: '86%', top: '80%' },  // C++
+  { left: '14%', top: '85%' },  // C#
+  { left: '50%', top: '18%' },  // PostgreSQL
+  { left: '8%', top: '50%' },   // Git (first)
+  { left: '92%', top: '35%' },  // Docker
+  { left: '6%', top: '65%' },   // Latex
+  { left: '95%', top: '55%' },  // JavaScript
+  { left: '5%', top: '30%' },   // gRPC
+  { left: '70%', top: '20%' },  // .Net
+  { left: '7%', top: '18%' },   // Redux
+  { left: '93%', top: '85%' },  // R
+  { left: '13%', top: '12%' },  // GO
+  { left: '65%', top: '10%' },  // Git (second)
+  { left: '23%', top: '16%' },  // Next.js
+  { left: '82%', top: '70%' },  // OpenCV
+  { left: '80%', top: '10%' },  // Vite
+];
 
 export const techStacks = [
   {
