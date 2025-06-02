@@ -3,25 +3,29 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { experiences } from '@/lib/info';
+import AnimatedTechStack from '@/components/AnimatedTechStack';
 
 const Experience = ({ isIndexPage = false }: { isIndexPage?: boolean }) => {
   return (
     <div className="min-h-screen">
-      <section className={`py-20 ${isIndexPage ? 'bg-[#254194] z-0' : 'bg-gray-50'}`}>
-        <div className="max-w-6xl mx-auto px-6">
-          <div className={`text-center mb-16 animate-fade-in ${isIndexPage ? 'text-white' : ''}`}>
-            <h1 className={`text-4xl font-bold mb-4 ${isIndexPage ? 'text-white' : 'text-[#254194]'}`}>Work Experience</h1>
-            <div className={`w-24 h-1 mx-auto mb-6 ${isIndexPage ? 'bg-white' : 'bg-[#254194]'}`}></div>
-            <p className={`text-xl max-w-3xl mx-auto ${isIndexPage ? 'text-gray-200' : 'text-gray-600'}`}>
+      <section className={`relative py-20 ${isIndexPage ? 'bg-[#254194] z-0' : 'bg-gray-50'}`}>
+        {isIndexPage && (
+          <div className="absolute inset-0 z-10">
+            <AnimatedTechStack className="w-full h-full pointer-events-auto" isIndexPage />
+          </div>
+        )}
+        <div className="relative z-20 max-w-6xl mx-auto px-6 pointer-events-none">
+          <div className={`text-center mt-12 pb-10 animate-fade-in ${isIndexPage ? 'text-white' : 'text-white'} `}>
+            <h1 className={`text-4xl font-bold mb-4  ${isIndexPage ? 'text-white' : 'text-[#254194]'} `}>Work Experience</h1>
+            <div className={`w-24 h-1 mx-auto mb-6  ${isIndexPage ? 'bg-white' : 'bg-[#254194]'} `}></div>
+            <p className={`text-xl max-w-3xl mx-auto  ${isIndexPage ? 'text-gray-200' : 'text-gray-600'} `}>
               My professional journey and experiences in software development
             </p>
           </div>
-
-          <div className={`text-center mt-12 pb-10 animate-fade-in ${isIndexPage ? 'text-gray-200' : 'text-gray-600'}`}>
+          <div className={`text-center mt-12 pb-10 animate-fade-in  ${isIndexPage ? 'text-gray-200' : 'text-gray-600'} `}>
             <p className="italic">Click on any experience to view detailed information</p>
           </div>
-
-          <div className="space-y-8 animate-fade-in">
+          <div className="space-y-8 animate-fade-in pointer-events-auto">
             {experiences.map((experience, index) => (
               <Link 
                 key={experience.id}

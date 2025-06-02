@@ -33,11 +33,8 @@ const Index = () => {
         </div>
       </section>
       <ProjectSection />
-      <section id="experience" className="relative">
-        <AnimatedTechStack className="absolute inset-0 z-10" isIndexPage />
-        <div className="relative">
-          <ExperienceSection isIndexPage />
-        </div>
+      <section id="experience">
+        <ExperienceSection isIndexPage />
       </section>
       <ContactSection isIndexPage/>
     </div>
