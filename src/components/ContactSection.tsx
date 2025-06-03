@@ -7,7 +7,7 @@ const ContactSection = ({ isIndexPage = false }: { isIndexPage?: boolean }) => {
   return (
     <section
       id="contact"
-      className={`py-8 ${isIndexPage ? 'bg-white text-[#254194]' : 'bg-[#254194] text-white'}`}
+      className={`py-8 ${isIndexPage ? 'bg-white text-[#254194]' : 'bg-gradient-to-br from-[#1a2d6b] to-[#254194] text-white'}`}
     >
       <div className="max-w-4xl mx-auto px-6">
         <div className="text-center mb-6">
@@ -60,8 +60,11 @@ const ContactSection = ({ isIndexPage = false }: { isIndexPage?: boolean }) => {
           <a
             href={RESUME_PATH}
             download
-            className="flex items-center space-x-2 border-2 px-4 py-2 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 
-            bg-[#254194] border-[#254194] text-white hover:bg-[#1a2d6b] hover:text-white"
+            className={`flex items-center space-x-2 border-2 px-4 py-2 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 ${
+              isIndexPage
+                ? 'border-[#254194] bg-[#254194] text-white hover:bg-[#1a2d6b] hover:text-white'
+                : 'border-white bg-white text-[#254194] hover:text-[#254194]'
+            }`}
 
           >
             <Download className="w-4 h-4" />
