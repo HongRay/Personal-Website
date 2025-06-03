@@ -39,7 +39,7 @@ const Experience = ({ isIndexPage = false }: { isIndexPage?: boolean }) => {
                       <img 
                         src={experience.logo} 
                         alt={`${experience.company} logo`}
-                        className="w-20 h-20 rounded-lg object-cover group-hover:scale-110 transition-transform duration-300"
+                        className="w-24 h-24 rounded-lg object-cover transition-transform duration-300 group-hover:rotate-3 group-hover:shadow-lg group-hover:scale-110"
                       />
                     </div>
                     <div className="flex-grow">
