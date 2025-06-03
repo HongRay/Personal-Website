@@ -4,7 +4,7 @@ import AnimatedTechStack from './AnimatedTechStack';
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-[#254194] to-[#1a2d6b] text-white overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-[#1a2d6b] to-[#254194]  text-white overflow-hidden">
       <AnimatedTechStack />
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6 pointer-events-none">
         <div className="animate-fade-in">

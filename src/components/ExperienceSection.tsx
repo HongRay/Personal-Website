@@ -8,7 +8,7 @@ import AnimatedTechStack from '@/components/AnimatedTechStack';
 const Experience = ({ isIndexPage = false }: { isIndexPage?: boolean }) => {
   return (
     <div className="min-h-screen">
-      <section className={`relative py-20 ${isIndexPage ? 'bg-[#254194] z-0' : 'bg-gray-50'}`}>
+      <section className={`relative py-20 ${isIndexPage ? 'bg-gradient-to-br from-[#1a2d6b] to-[#254194] z-0' : 'bg-gray-50'}`}>
         {isIndexPage && (
           <div className="absolute inset-0 z-10">
             <AnimatedTechStack className="w-full h-full pointer-events-auto" isIndexPage />

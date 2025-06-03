@@ -60,11 +60,9 @@ const ContactSection = ({ isIndexPage = false }: { isIndexPage?: boolean }) => {
           <a
             href={RESUME_PATH}
             download
-            className={`flex items-center space-x-2 border-2 px-4 py-2 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 ${
-              isIndexPage
-                ? 'border-[#254194] text-[#254194] hover:bg-[#254194] hover:text-white'
-                : 'border-white text-white hover:bg-white hover:text-[#254194]'
-            }`}
+            className="flex items-center space-x-2 border-2 px-4 py-2 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 
+            bg-[#254194] border-[#254194] text-white hover:bg-[#1a2d6b] hover:text-white"
+
           >
             <Download className="w-4 h-4" />
             <span>Resume</span>

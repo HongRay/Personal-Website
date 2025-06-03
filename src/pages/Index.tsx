@@ -17,7 +17,7 @@ const Index = () => {
       <HeroSection />
       <AboutSection />
       {/* Skills Section */}
-      <section className="relative py-20 bg-gradient-to-br bg-[#254194] text-white overflow-hidden pointer-events-none">
+      <section className="relative py-20 bg-gradient-to-br to-[#1a2d6b] from-[#254194] text-white overflow-hidden pointer-events-none">
         <AnimatedTechStack className="absolute inset-0 z-0" />
         <div className="relative z-10 max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
