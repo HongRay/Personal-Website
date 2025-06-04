@@ -19,6 +19,9 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				pixel: ['"Press Start 2P"', 'cursive'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -111,6 +114,24 @@ export default {
 					'50%': {
 						transform: 'translateY(-10px)'
 					}
+				},
+				'typing': {
+					'0%': { 
+						width: '0' 
+					},
+					'50%': { 
+						width: '14ch' 
+					},
+					'80%': { 
+						width: '14ch' 
+					},
+					'100%': { 
+						width: '14ch' 
+					} // resets to allow looping
+				},
+				'blink-caret': {
+				'0%, 100%': { borderColor: 'transparent' },
+      			'50%': { borderColor: '#6b46c1' },
 				}
 			},
 			animation: {
@@ -118,8 +139,9 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.8s ease-out',
 				'float-updown': 'float-updown 3s ease-in-out infinite',
-				'float': 'float 6s ease-in-out infinite'
-			}
+				'float': 'float 6s ease-in-out infinite',
+				'typing': 'typing 3s steps(14) infinite, blink-caret 0.75s step-end infinite',
+			},
 		}
 	},
 	plugins: [require("tailwindcss-animate")],

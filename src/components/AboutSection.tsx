@@ -25,10 +25,14 @@ const AboutSection = () => {
               meaningful and fun digital experiences!
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              <span className="text-xl italic">When I'm not coding,</span> you'll find me exploring the outdoors through <u>cycling, hiking, or kayaking.</u> 🚴 
+              <span className="text-xl italic font-semibold">When I'm not coding,</span> you'll find me exploring the outdoors through <u>cycling, hiking, or kayaking.</u> 🚴 
               I believe that staying active and experiencing nature helps me bring fresh perspectives to my work 
-              and maintains the creativity essential for problem-solving in software development. Additionally, I like to play
-              <strong>computer games</strong> as well! 🎮
+              and maintains the creativity essential for problem-solving in software development. Additionally, I like to play &nbsp;
+              <strong className="align-middle inline-block overflow-hidden whitespace-nowrap border-r-2 border-[#254194] font-pixel text-lg text-purple-700 animate-typing">
+                  computer games
+              </strong> 
+              {/* This is done to ensure the interest and hobbies card doesnt shift when its animation */}
+              <span className="block h-[2.5rem]"> as well! 🎮</span> 
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
               I'm always eager to learn new technologies and take on challenging projects that push my boundaries 
