@@ -18,7 +18,7 @@ const Index = () => {
       <AboutSection />
       {/* Skills Section */}
       <section className="relative py-20 bg-gradient-to-br to-[#1a2d6b] from-[#254194] text-white overflow-hidden pointer-events-none">
-        <AnimatedTechStack className="absolute inset-0 z-0" />
+        <AnimatedTechStack className="absolute inset-0 z-0" isIndexTechStackPage/>
         <div className="relative z-10 max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-white mb-4">Technical Skills</h2>

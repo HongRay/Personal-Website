@@ -29,7 +29,11 @@ export const techIcons = [
   { name: 'Next.js', icon: '/icons/nextjs.svg', delay: '11s', duration: '5.2s' },
   { name: 'OpenCV', icon: '/icons/opencv.svg', delay: '11.5s', duration: '6s' },
   { name: 'Vite', icon: '/icons/Vite.png', delay: '12s', duration: '7s' },
+  { name: 'pandas', icon: '/icons/pandas.svg', delay: '3.5s', duration: '4s' },
+  { name: 'numpy', icon: '/icons/numpy.svg', delay: '3.3s', duration: '4.2s' },
 ];
+
+//Positions of popping Logos
 
 export const positions = [
   { left: '30%', top: '10%' },  // React.js
@@ -57,6 +61,8 @@ export const positions = [
   { left: '25%', top: '49%' },  // Next.js
   { left: '82%', top: '70%' },  // OpenCV
   { left: '80%', top: '10%' },  // Vite
+  { left: '30%', top: '85%' },  // pandas
+  { left: '66%', top: '70%' },  // numpy
 ];
 
 export const positionsExperience = [
@@ -85,6 +91,38 @@ export const positionsExperience = [
   { left: '23%', top: '16%' },  // Next.js
   { left: '82%', top: '70%' },  // OpenCV
   { left: '80%', top: '10%' },  // Vite
+  { left: '30%', top: '20%' },  // pandas
+  { left: '42%', top: '5%' },  // numpy
+];
+
+export const positionsIndexTechStack = [
+  { left: '30%', top: '10%' },  // React.js
+  { left: '90%', top: '12%' },  // HTML5
+  { left: '19%', top: '25%' },  // CSS
+  { left: '75%', top: '30%' },  // Tailwind CSS
+  { left: '15%', top: '40%' },  // TypeScript
+  { left: '83%', top: '45%' },  // Node.js
+  { left: '18%', top: '60%' },  // Vim Studio
+  { left: '45%', top: '10%' },  // Python
+  { left: '15%', top: '71%' },  // Java
+  { left: '80%', top: '80%' },  // C++
+  { left: '14%', top: '85%' },  // C#
+  { left: '30%', top: '30%' },  // PostgreSQL
+  { left: '8%', top: '50%' },   // Git (first)
+  { left: '92%', top: '35%' },  // Docker
+  { left: '6%', top: '65%' },   // Latex
+  { left: '95%', top: '55%' },  // JavaScript
+  { left: '5%', top: '30%' },   // gRPC
+  { left: '68%', top: '35%' },  // .Net
+  { left: '7%', top: '18%' },   // Redux
+  { left: '93%', top: '85%' },  // R
+  { left: '13%', top: '12%' },  // GO
+  { left: '65%', top: '10%' },  // Git (second)
+  { left: '37%', top: '22%' },  // Next.js
+  { left: '87%', top: '70%' },  // OpenCV
+  { left: '80%', top: '10%' },  // Vite
+  { left: '45%', top: '29%' },  // pandas
+  { left: '58%', top: '28%' },  // numpy
 ];
 
 export const techStacks = [
@@ -124,7 +162,9 @@ export const techStacks = [
       { name: 'Vim Studio', placeholder: '/icons/vim.png' },
       { name: 'Latex', placeholder: '/icons/Latex.png' },
       { name: 'OpenCV', placeholder: '/icons/opencv.svg' },
-      { name: 'R', placeholder: '/icons/R.png' }
+      { name: 'R', placeholder: '/icons/R.png' },
+      { name: 'pandas', placeholder: '/icons/pandas.svg' },
+      { name: 'numpy', placeholder: '/icons/numpy.svg' }
     ]
   }
 ];

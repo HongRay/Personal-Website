@@ -1,7 +1,15 @@
 import React, { useState } from 'react';
-import { techIcons, positions, positionsExperience } from '@/lib/configs';  
+import { techIcons, positions, positionsExperience, positionsIndexTechStack } from '@/lib/configs';  
 
-const AnimatedTechStack = ({ className = '', isIndexPage = false }: { className?: string; isIndexPage?: boolean; }) => {
+const AnimatedTechStack = ({ 
+  className = '', 
+  isIndexPage = false, 
+  isIndexTechStackPage = false,
+}: { 
+  className?: string; 
+  isIndexPage?: boolean;
+  isIndexTechStackPage?: boolean
+}) => {
   const [clickedIcons, setClickedIcons] = useState<Set<number>>(new Set());
   
   const handleIconClick = (index: number) => {
@@ -17,7 +25,11 @@ const AnimatedTechStack = ({ className = '', isIndexPage = false }: { className?
     }, 600); // Duration matches the pop animation
   };
 
-  const currentPositions = isIndexPage ? positionsExperience : positions;
+   const currentPositions = isIndexTechStackPage
+    ? positionsIndexTechStack
+    : isIndexPage
+    ? positionsExperience
+    : positions;
 
   return (
     <div className={`absolute inset-0 overflow-hidden pointer-events-none ${className}`}>
