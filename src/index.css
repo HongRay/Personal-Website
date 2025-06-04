@@ -124,6 +124,15 @@ html {
   }
 }
 
+@keyframes float-updown {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  55% {
+    transform: translate(-10px);
+  }
+}
+
 /* Pop animation for clicked icons */
 @keyframes pop {
   0% {
@@ -144,6 +153,10 @@ html {
 }
 
 .animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-updown {
   animation: float 6s ease-in-out infinite;
 }
 

@@ -24,7 +24,7 @@ const Index = () => {
             <h2 className="text-4xl font-bold text-white mb-4">Technical Skills</h2>
             <div className="w-24 h-1 bg-white mx-auto mb-6"></div>
             <p className="text-xl text-gray-200 max-w-3xl mx-auto mb-12">
-              Here are the technologies and tools I've been working with during my Computer Science studies
+              Here are the <span className='text-[#fabc2d] font-semibold'>technologies</span> and tools I've been working with
             </p>
           </div>
           <div className="pointer-events-auto">
@@ -37,6 +37,13 @@ const Index = () => {
         <ExperienceSection isIndexPage />
       </section>
       <ContactSection isIndexPage/>
+      {/* Back to top button */}
+      <button
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        className="fixed bottom-12 right-20 z-50  w-12 h-12 bg-[#fabc2d] text-[#254194] p-3 rounded-full shadow-lg hover:scale-110 transition-transform duration-300 animate-float-updown"
+      >
+        ↑
+      </button>
     </div>
   );
 };

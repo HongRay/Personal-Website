@@ -42,7 +42,7 @@ const AboutSection = () => {
             </p>
           </div>
           <div className="space-y-6">
-            <h3 className="text-2xl font-semibold text-[#254194] mb-6">Interests <span className='text-gray-700'>&</span> <span className='text-[#fabc2d]'>Hobbies</span></h3>
+            <h3 className="text-2xl font-semibold text-[#254194] mb-6">Interests <span className='text-gray-600 font-normal'>&</span> <span className='text-[#fabc2d]'>Hobbies</span></h3>
             {/* Interest & Hobbies Card */}
             {interests.map((interest, index) => (
               <div key={index} className="flex items-center space-x-4 p-4 bg-white rounded-lg shadow-md border border-gray-120 hover:shadow-xl transition-shadow duration-300">

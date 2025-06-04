@@ -52,8 +52,8 @@ const TechStackCarousel = ({ isIndexPage = false }: { isIndexPage?: boolean }) =
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className={isIndexPage ? "bg-white text-[#254194]" : ""} />
-        <CarouselNext className={isIndexPage ? "bg-white text-[#254194]" : ""} />
+        <CarouselPrevious className={`transition-transform duration-300 hover:scale-110 ${isIndexPage ? "bg-white text-[#254194]" : ""}`} />
+        <CarouselNext className={`transition-transform duration-300 hover:scale-110 ${isIndexPage ? "bg-white text-[#254194]" : ""}`} />
       </Carousel>
     </div>
   );

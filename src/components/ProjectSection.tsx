@@ -9,7 +9,7 @@ const Projects = () => {
         <section id = "projects" className="py-20 bg-gray-50 ">
           <div className="max-w-6xl mx-auto px-6 animate-fade-in">
             <div className="text-center mb-16">
-              <h1 className="text-4xl font-bold text-[#254194] mb-4">Featured Projects</h1>
+              <h1 className="text-4xl font-bold text-[#254194] mb-4">Featured <span className='text-[#fabc2d]'>Projects</span></h1>
               <div className="w-24 h-1 bg-[#254194] mx-auto mb-6"></div>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 Here are some of the projects I've worked on during my studies and personal time
