@@ -25,6 +25,7 @@ const Experience = ({ isIndexPage = false }: { isIndexPage?: boolean }) => {
           <div className={`text-center mt-12 pb-10 animate-fade-in  ${isIndexPage ? 'text-gray-200' : 'text-gray-600'} `}>
             <p className="italic">Click on any experience to view detailed information</p>
           </div>
+          {/* Experience Cards */}
           <div className="space-y-8 animate-fade-in pointer-events-auto">
             {experiences.map((experience, index) => (
               <Link 
@@ -35,28 +36,33 @@ const Experience = ({ isIndexPage = false }: { isIndexPage?: boolean }) => {
               >
                 <div className="bg-white rounded-lg shadow-md p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-[1.02] group cursor-pointer">
                   <div className="flex flex-col md:flex-row gap-6">
+                    {/* Experience Image */}
                     <div className="flex-shrink-0">
                       <img 
                         src={experience.logo} 
                         alt={`${experience.company} logo`}
-                        className="w-24 h-24 rounded-lg object-cover transition-transform duration-300 group-hover:rotate-3 group-hover:shadow-lg group-hover:scale-110"
+                        className="w-24 h-24 rounded-lg object-cover transition-transform duration-300 group-hover:rotate-3 group-hover:shadow-lg group-hover:scale-[1.2]"
                       />
                     </div>
                     <div className="flex-grow">
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        {/* Title and company */}
                         <div>
                           <h2 className="text-2xl font-semibold text-[#254194] mb-1 group-hover:text-[#1a2d6b] transition-colors duration-300">
                             {experience.title}
                           </h2>
                           <h3 className="text-xl text-gray-700 font-medium">{experience.company}</h3>
                         </div>
+                        {/* Date and arrow */}
                         <div className="flex items-center gap-3 mt-2 md:mt-0">
                           <span className="text-gray-500 font-medium">{experience.duration}</span>
                           <ArrowRight className="w-5 h-5 text-[#254194] group-hover:translate-x-2 transition-transform duration-300" />
                         </div>
                       </div>
+                      {/* Description */}
                       <p className="text-gray-600 mb-4 leading-relaxed">{experience.description}</p>
                       <div className="flex flex-wrap gap-2">
+                        {/* Tech Stacks */}
                         {experience.skills.map((skill, skillIndex) => (
                           <span 
                             key={skillIndex} 

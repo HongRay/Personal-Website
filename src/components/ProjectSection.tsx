@@ -15,23 +15,26 @@ const Projects = () => {
                 Here are some of the projects I've worked on during my studies and personal time
               </p>
             </div>
-
+            {/* Project Card */}
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {projectDetails.map((project, index) => (
                 <div
                   key={index}
-                  className="group bg-white rounded-lg shadow-lg border border-gray-120 transition-all duration-300 transform hover:-translate-y-2 hover:scale-[1.02] hover:shadow-2xl"
+                  className="group bg-white rounded-lg shadow-lg border border-gray-120 transition-all duration-300 transform hover:-translate-y-2 hover:scale-[1.02] hover:shadow-2xl overflow-visible"
                 >
                   <div className="p-6">
-                    <div className="mb-4 text-center">
+                    {/* Image */}
+                    <div className="relative mb-4 text-center overflow-visible">
                       <img
                         src={project.image}
                         alt={project.title}
-                        className="mx-auto w-full h-40 object-cover rounded-md shadow-sm transition-transform duration-500 transform group-hover:rotate-2 group-hover:scale-105"
+                        className="mx-auto w-full h-40 object-cover rounded-md shadow-sm transition-transform duration-500 transform group-hover:rotate-3 group-hover:scale-[1.2] z-10 relative group-hover:ring-2 group-hover:ring-[#254194]"
+                        style={{ willChange: 'transform' }}
                       />
                     </div>
                     <h2 className="text-xl font-semibold text-[#254194] mb-3">{project.title}</h2>
                     <p className="text-gray-600 mb-4 leading-relaxed break-words">{project.description}</p>
+                    {/* tech stacks */}
                     <div className="flex flex-wrap gap-2 mb-4">
                       {project.technologies.map((tech, techIndex) => (
                         <span key={techIndex} className="px-3 py-1 bg-[#254194] text-white text-sm rounded-full">
@@ -39,6 +42,7 @@ const Projects = () => {
                         </span>
                       ))}
                     </div>
+                    {/* Buttons */}
                     <div className="flex space-x-3">
                       <a
                         href={project.viewLink}
