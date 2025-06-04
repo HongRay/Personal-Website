@@ -55,7 +55,7 @@ export const positions = [
   { left: '5%', top: '30%' },   // gRPC
   { left: '68%', top: '35%' },  // .Net
   { left: '7%', top: '18%' },   // Redux
-  { left: '93%', top: '85%' },  // R
+  { left: '88%', top: '78%' },  // R
   { left: '13%', top: '12%' },  // GO
   { left: '65%', top: '10%' },  // Git (second)
   { left: '25%', top: '49%' },  // Next.js
