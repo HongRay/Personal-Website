@@ -124,11 +124,11 @@ html {
   }
 }
 
-@keyframes float-updown {
+@keyframes float-updown-button {
   0%, 100% {
     transform: translateY(0px);
   }
-  55% {
+  50% {
     transform: translate(-10px);
   }
 }
@@ -156,8 +156,8 @@ html {
   animation: float 6s ease-in-out infinite;
 }
 
-.animate-float-updown {
-  animation: float 6s ease-in-out infinite;
+.animate-float-updown-button {
+  animation: float 4.3s linear infinite;
 }
 
 .animate-pop {

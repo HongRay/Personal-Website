@@ -40,7 +40,7 @@ const Index = () => {
       {/* Back to top button */}
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-        className="fixed bottom-12 right-20 z-50  w-12 h-12 bg-[#fabc2d] text-[#254194] p-3 rounded-full shadow-lg hover:scale-110 transition-transform duration-300 animate-float-updown"
+        className="fixed bottom-12 right-20 z-50  w-12 h-12 bg-[#fabc2d] text-[#254194] p-3 rounded-full shadow-lg hover:scale-110 transition-transform duration-300 animate-float-updown-button"
       >
         ↑
       </button>
