@@ -4,7 +4,6 @@ export const projectDetails = [
       description: 'Full-stack web application built with React and Node.js...',
       technologies: ['React', 'Node.js', 'MongoDB', 'Stripe API'],
       image: '/download.gif',
-      viewLink: 'https://example.com/ecommerce',
       codeLink: 'https://github.com/youruser/ecommerce'
     },
     {
@@ -12,15 +11,13 @@ export const projectDetails = [
       description: 'Responsive web application for project management...',
       technologies: ['TypeScript', 'React', 'Firebase', 'Material-UI'],
       image: '/public/placeholder.svg',
-      viewLink: 'https://example.com/taskapp',
       codeLink: 'https://github.com/youruser/taskapp'
     },
     {
       title: 'Weather Analytics Dashboard',
-      description: 'Data visualization dashboard..ddddddddddddddddddddddddddddddddddddddddasdasdasssssssssssssssssssssssssssssssssssshjhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhdddddddddddd.',
+      description: 'Data visualization dashboard..ddddddddddddddddddddddddddddddddhhhhhhhhhhhhhhhhhhhhhhhhhdddddhhhhhhhhhhhhhhhhhdddddddddhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhdddddddddddd.',
       technologies: ['Python', 'React', 'Chart.js', 'Weather API'],
       image: '/public/placeholder.svg',
-      viewLink: 'https://example.com/weatherdashboard',
       codeLink: 'https://github.com/youruser/weatherdashboard'
     }
   ];
