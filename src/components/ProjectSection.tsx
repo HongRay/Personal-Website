@@ -47,7 +47,7 @@ const Projects = () => {
                     <div className="mt-auto flex flex-wrap gap-2">
                       <div className="w-full h-px bg-gray-200 my-4 rounded-full" />
                       {project.technologies.map((tech, techIndex) => (
-                        <span key={techIndex} className="px-3 py-1 bg-[#254194] text-white text-sm rounded-full">
+                        <span key={techIndex} className="px-3 py-1 bg-[#254194] text-white text-sm rounded-full hover:bg-[#fabc2d] hover:text-[#254194]">
                           {tech}
                         </span>
                       ))}
