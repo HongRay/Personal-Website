@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
-import { experiences } from '@/lib/info';
+import { experiences } from '@/lib/information/experience';
 import AnimatedTechStack from '@/components/AnimatedTechStack';
 
 const Experience = ({ isIndexPage = false }: { isIndexPage?: boolean }) => {

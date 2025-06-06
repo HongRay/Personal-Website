@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { projectDetails } from '@/lib/info';
+import { projectDetails } from '@/lib/information/project';
 
 const Projects = () => {
 

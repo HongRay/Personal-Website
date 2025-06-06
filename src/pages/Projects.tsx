@@ -2,7 +2,7 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
 import ContactSection from '../components/ContactSection';
-import { projectDetails } from '@/lib/info';
+import { projectDetails } from '@/lib/information/project';
 import ProjectSection from '../components/ProjectSection'
 
 const Projects = () => {

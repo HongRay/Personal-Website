@@ -4,7 +4,7 @@ import { useParams, useLocation } from 'react-router-dom';
 import { ArrowLeft, Calendar, MapPin, ExternalLink } from 'lucide-react';
 import Navigation from '../components/Navigation';
 import ContactSection from '../components/ContactSection';
-import { experiencesDetails } from '@/lib/info';
+import { experiencesDetails } from '@/lib/information/experience';
 import { useEffect } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 
