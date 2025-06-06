@@ -17,7 +17,7 @@ const ContactSection = ({ isIndexPage = false }: { isIndexPage?: boolean }) => {
           </p>
         </div>
 
-        <div className="flex items-center justify-center gap-6">
+        <div className="flex items-center justify-center gap-4 sm:gap-6">
           <a
             href={EMAIL_LINK}
             className={`flex items-center space-x-2 border-2 px-4 py-2 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 ${
@@ -48,7 +48,7 @@ const ContactSection = ({ isIndexPage = false }: { isIndexPage?: boolean }) => {
             href={GITHUB_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            className={`flex items-center space-x-2 border-2 px-4 py-2 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 ${
+            className={`hidden sm:flex items-center space-x-2 border-2 px-4 py-2 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 ${
               isIndexPage
                 ? 'border-[#254194] text-[#254194] hover:bg-[#254194] hover:text-white'
                 : 'border-white text-white hover:bg-white hover:text-[#254194]'
@@ -60,7 +60,7 @@ const ContactSection = ({ isIndexPage = false }: { isIndexPage?: boolean }) => {
           <a
             href={RESUME_PATH}
             download
-            className={`flex items-center space-x-2 border-2 px-4 py-2 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 ${
+            className={`hidden sm:flex items-center space-x-2 border-2 px-4 py-2 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 ${
               isIndexPage
                 ? 'border-[#254194] bg-[#254194] text-white hover:bg-[#1a2d6b] hover:text-white'
                 : 'border-white bg-white text-[#254194] hover:text-[#254194]'
