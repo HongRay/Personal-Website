@@ -60,7 +60,7 @@ const ExperienceDetail = () => {
                   <img 
                     src={experience.logo} 
                     alt={`${experience.company} logo`}
-                    className="w-20 h-20 rounded-lg object-cover shadow-md hover:scale-105 transition-transform duration-300"
+                    className="w-24 h-24 rounded-lg shadow-md object-cover transition-transform duration-300 hover:rotate-3 hover:shadow-lg hover:scale-[1.2]"
                   />
                   {/* Title and Company */}
                   <div className="flex-grow">
@@ -113,7 +113,7 @@ const ExperienceDetail = () => {
                           key={index} 
                           className="flex items-start gap-3 group"
                         >
-                          <div className="w-2 h-2 bg-[#254194] rounded-full mt-2 group-hover:scale-125 transition-transform duration-300"></div>
+                          <div className="shrink-0 w-[10px] h-[10px] bg-[#254194] rounded-full transition-all duration-300 group-hover:scale-150 group-hover:bg-[#fabc2d] mt-[6px]" />
                           <span className="text-gray-600 leading-relaxed">{achievement}</span>
                         </li>
                       ))}
@@ -127,7 +127,7 @@ const ExperienceDetail = () => {
                     {experience.projects.map((project, index) => (
                       <div 
                         key={index} 
-                        className="bg-gray-50 rounded-lg p-6 hover:bg-gray-100 transition-all duration-300 hover:shadow-md transform hover:-translate-y-1"
+                        className="bg-gray-50 rounded-lg p-6  transition-all duration-300 shadow-lg "
                       >
                         <div className="flex items-start justify-between mb-3">
                           <h4 className="text-lg font-semibold text-gray-800">{project.name}</h4>

@@ -37,7 +37,7 @@
       duration: 'June 2024 - August 2024',
       location: 'San Francisco, CA',
       description: 'Developed and maintained web applications using React and Node.js. Collaborated with senior developers on feature implementation and bug fixes. Participated in code reviews and agile development processes.',
-      logo: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=100&h=100&fit=crop',
+      logo: '/public/placeholder.svg',
       skills: ['React', 'Node.js', 'MongoDB', 'Git'],
       achievements: [
         'Built a user dashboard that improved customer engagement by 35%',
@@ -65,7 +65,7 @@
       duration: 'January 2024 - May 2024',
       location: 'Austin, TX',
       description: 'Built responsive web interfaces and implemented RESTful APIs. Worked closely with design team to translate mockups into functional components.',
-      logo: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=100&h=100&fit=crop',
+      logo: '/public/placeholder.svg',
       skills: ['TypeScript', 'React', 'Express.js', 'PostgreSQL'],
       achievements: [
         'Developed mobile-first responsive designs for 5+ client projects',
@@ -93,7 +93,7 @@
       duration: 'September 2023 - December 2023',
       location: 'Remote',
       description: 'Created modern, responsive websites for various clients. Implemented interactive features and animations.',
-      logo: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=100&h=100&fit=crop',
+      logo: '/public/placeholder.svg',
       skills: ['HTML', 'CSS', 'JavaScript', 'Tailwind CSS'],
       achievements: [
         'Delivered 12+ client websites with 100% on-time completion rate',
