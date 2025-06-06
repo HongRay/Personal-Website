@@ -66,7 +66,7 @@ const Experience = ({ isIndexPage = false }: { isIndexPage?: boolean }) => {
                         {experience.skills.map((skill, skillIndex) => (
                           <span 
                             key={skillIndex} 
-                            className="px-3 py-1 bg-[#254194] text-white text-sm rounded-full group-hover:bg-[#1a2d6b] transition-colors duration-300"
+                            className="px-3 py-1 bg-[#254194] text-white text-sm rounded-full hover:bg-[#fabc2d] hover:text-[#254194] transition-colors duration-300"
                           >
                             {skill}
                           </span>
