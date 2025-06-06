@@ -45,6 +45,7 @@ const ExperienceDetail = () => {
       <Navigation />
         <section className="py-20 bg-gray-50">
           <div className="max-w-4xl mx-auto px-6">
+            {/* Back Left Arrow */}
             <Link 
               to={fromIndex ? '/#experience' : '/experience'}
               className="inline-flex items-center text-[#254194] hover:text-[#1a2d6b] mb-8 transition-colors duration-300 hover:translate-x-1 transform"
@@ -52,7 +53,7 @@ const ExperienceDetail = () => {
               <ArrowLeft className="w-5 h-5 mr-2" />
               {fromIndex ? 'Back to Home' : 'Back to Experience'}
             </Link>
-
+            {/* Experience Logo */}
             <div className="bg-white rounded-xl shadow-lg overflow-hidden animate-fade-in">
               <div className="p-8 border-b border-gray-100">
                 <div className="flex items-start gap-6">
@@ -61,14 +62,17 @@ const ExperienceDetail = () => {
                     alt={`${experience.company} logo`}
                     className="w-20 h-20 rounded-lg object-cover shadow-md hover:scale-105 transition-transform duration-300"
                   />
+                  {/* Title and Company */}
                   <div className="flex-grow">
                     <h1 className="text-3xl font-bold text-[#254194] mb-2">{experience.title}</h1>
                     <h2 className="text-2xl text-gray-700 font-semibold mb-4">{experience.company}</h2>
                     <div className="flex flex-wrap gap-4 text-gray-600">
+                      {/* Date */}
                       <div className="flex items-center gap-2">
                         <Calendar className="w-4 h-4" />
                         <span>{experience.duration}</span>
                       </div>
+                      {/* Location */}
                       <div className="flex items-center gap-2">
                         <MapPin className="w-4 h-4" />
                         <span>{experience.location}</span>
@@ -77,7 +81,7 @@ const ExperienceDetail = () => {
                   </div>
                 </div>
               </div>
-
+              {/* Overview */}
               <div className="p-8">
                 <div className="grid md:grid-cols-2 gap-8">
                   <div className="space-y-6">
@@ -85,7 +89,7 @@ const ExperienceDetail = () => {
                       <h3 className="text-xl font-semibold text-gray-800 mb-3">Overview</h3>
                       <p className="text-gray-600 leading-relaxed">{experience.description}</p>
                     </div>
-
+                    {/* Tech Stack */}
                     <div>
                       <h3 className="text-xl font-semibold text-gray-800 mb-3">Technologies Used</h3>
                       <div className="flex flex-wrap gap-2">
@@ -100,7 +104,7 @@ const ExperienceDetail = () => {
                       </div>
                     </div>
                   </div>
-
+                  {/* Achievements */}
                   <div>
                     <h3 className="text-xl font-semibold text-gray-800 mb-3">Key Achievements</h3>
                     <ul className="space-y-3">
@@ -116,7 +120,7 @@ const ExperienceDetail = () => {
                     </ul>
                   </div>
                 </div>
-
+                {/* Projects */}
                 <div className="mt-8 pt-8 border-t border-gray-100">
                   <h3 className="text-xl font-semibold text-gray-800 mb-6">Notable Projects</h3>
                   <div className="grid md:grid-cols-2 gap-6">
