@@ -5,7 +5,7 @@ import { projectDetails } from '@/lib/information/project';
 const Projects = () => {
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen overflow-x-hidden bg-gray-50">
         <section id = "projects" className="py-20 bg-gray-50 ">
           <div className="max-w-6xl mx-auto px-6 animate-fade-in">
             <div className="text-center mb-16">
@@ -16,31 +16,28 @@ const Projects = () => {
               </p>
             </div>
             {/* Project Card */}
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {projectDetails.map((project, index) => (
                 <a
                   key={index}
                   href={project.codeLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group bg-white rounded-lg shadow-lg border border-gray-120 transition-all duration-300 transform hover:-translate-y-2 hover:scale-[1.02] hover:shadow-2xl overflow-visible h-full block"
+                  className="group bg-white rounded-lg shadow-lg border border-gray-200 transition-all duration-300 md:hover:-translate-y-2 md:hover:scale-[1.02] md:hover:shadow-2xl overflow-hidden h-full block"
                 >
                   <div className="p-6 flex flex-col h-full">
                     {/* Image */}
-                    <div className="relative mb-4 text-center overflow-visible">
-                      <div className="relative transition-transform duration-500 transform group-hover:rotate-3 group-hover:scale-[1.2] group-hover:ring-2 group-hover:ring-[#254194] rounded-md overflow-hidden">
-                      {/* Image */}
+                    <div className="relative mb-4 aspect-[16/9] rounded-md overflow-hidden transition-transform duration-500 transform md:group-hover:rotate-3 md:group-hover:scale-[1.05] md:group-hover:ring-2 md:group-hover:ring-[#254194]">
                       <img
                         src={project.image}
                         alt={project.title}
-                        className="w-full h-40 object-cover rounded-md"
-                        style={{ willChange: 'transform' }}
+                        className="w-full h-full object-cover rounded-md"
                       />
-                      {/* Overlay */}
                       <div className="absolute inset-0 bg-gray-800 bg-opacity-60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
-                        <span className="text-white text-lg font-semibold">Click to View <br/> Source Code</span>
+                        <span className="text-white text-lg font-semibold text-center leading-snug">
+                          Click to View<br />Source Code
+                        </span>
                       </div>
-                    </div>
                     </div>
                      <div>
                       <h2 className="text-xl font-semibold text-[#254194] mb-3">{project.title}</h2>
