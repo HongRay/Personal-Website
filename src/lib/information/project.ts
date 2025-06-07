@@ -43,7 +43,7 @@ export const projectPopUpDetails =[
     title: 'Impact Immersion Project',
     description: IexDescription,
     technologies: ['Community Service', 'Project & Stackholder Management', 'Business Application'],
-    image: ["/public/IEX.jpg", "/iex/2.jpg", "/iex/3.jpg"],
+    image: ["/IEX.jpg", "/iex/2.jpg", "/iex/3.jpg"],
     codeLink: 'popup',
     hasDetailPage: true,
     achievements: [
