@@ -35,7 +35,7 @@ const Projects = () => {
                       />
                       <div className="absolute inset-0 bg-gray-800 bg-opacity-60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
                         <span className="text-white text-lg font-semibold text-center leading-snug">
-                          Click to View<br />Source Code
+                          Click To <br/> View More
                         </span>
                       </div>
                     </div>
