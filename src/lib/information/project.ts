@@ -26,7 +26,7 @@ export const projectDetails = [
       title: 'Impact Immersion Project',
       description: IexDescription,
       technologies: ['Community Service', 'Project & Stackholder Management', 'Business Application'],
-      image: '/public/IEX.jpg',
+      image: '/public/IEX-Crop.jpg',
       codeLink: 'popup',
       hasDetailPage: true,
       id: 'iex',
@@ -43,7 +43,7 @@ export const projectPopUpDetails =[
     title: 'Impact Immersion Project',
     description: IexDescription,
     technologies: ['Community Service', 'Project & Stackholder Management', 'Business Application'],
-    image: '/public/IEX.jpg',
+    image: ["/public/IEX.jpg", "/iex/2.jpg", "/iex/3.jpg"],
     codeLink: 'popup',
     hasDetailPage: true,
     achievements: [

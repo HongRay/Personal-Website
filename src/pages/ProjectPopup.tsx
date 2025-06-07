@@ -52,7 +52,7 @@ const ProjectPopup = () => {
           {/* Card */}
           <div className="bg-white rounded-xl shadow-lg overflow-hidden animate-fade-in">
             {/* Media */}
-            <ProjectCarousel images={["/iex/1.jpg", "/iex/2.jpg", "/iex/3.jpg"]} />
+            <ProjectCarousel images={project.image} />
             {/* Content */}
             <div className="px-8 pt-0 pb-8">
               <h1 className="text-3xl font-bold text-[#254194] mb-2">{project.title}</h1>
