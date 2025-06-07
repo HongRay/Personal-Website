@@ -1,18 +1,18 @@
 import React, { useEffect } from 'react';
 import { useParams, useLocation } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
-import Navigation from '../../components/Navigation';
-import ContactSection from '../../components/ContactSection';
-import { projectDetails } from '@/lib/information/project';
+import Navigation from '../components/Navigation';
+import ContactSection from '../components/ContactSection';
+import { projectPopUpDetails } from '@/lib/information/project';
 import { HashLink as Link } from 'react-router-hash-link';
 import ProjectCarousel from '@/components/ProjectCarousel';
 
-const IexProjectPage = () => {
+const ProjectPopup = () => {
   const location = useLocation();
   const fromIndex = location.state?.fromIndex;
   const { id } = useParams<{ id: string }>();
 
-  const project = projectDetails.find((proj) => proj.id === id);
+  const project = projectPopUpDetails.find((proj) => proj.id === id);
 
   useEffect(() => {
     setTimeout(() => window.scrollTo(0, 0), 0);
@@ -99,4 +99,4 @@ const IexProjectPage = () => {
   );
 };
 
-export default IexProjectPage;
+export default ProjectPopup;

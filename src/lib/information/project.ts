@@ -36,3 +36,21 @@ export const projectDetails = [
       ]
     }
   ];
+
+export const projectPopUpDetails =[
+  {
+    id : 'iex',
+    title: 'Impact Immersion Project',
+    description: IexDescription,
+    technologies: ['Community Service', 'Project & Stackholder Management', 'Business Application'],
+    image: '/public/IEX.jpg',
+    codeLink: 'popup',
+    hasDetailPage: true,
+    achievements: [
+    'Organized a successful farm-to-fork programme with community involvement.',
+    'Promoted sustainability and healthy living throu'
+    ]
+  }
+];
+
+  //add a new export with the same id iex 
