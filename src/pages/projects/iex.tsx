@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react';
 import { useParams, useLocation } from 'react-router-dom';
-import { ArrowLeft, ExternalLink } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import Navigation from '../../components/Navigation';
 import ContactSection from '../../components/ContactSection';
 import { projectDetails } from '@/lib/information/project';
 import { HashLink as Link } from 'react-router-hash-link';
-
+import ProjectCarousel from '@/components/ProjectCarousel';
 
 const IexProjectPage = () => {
-const location = useLocation();
+  const location = useLocation();
   const fromIndex = location.state?.fromIndex;
   const { id } = useParams<{ id: string }>();
 
@@ -40,7 +40,7 @@ const location = useLocation();
       <Navigation />
       <section className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-6">
-          {/* Back button */}
+          {/* Back Button */}
           <Link
             to={fromIndex ? '/#projects' : '/projects'}
             className="inline-flex items-center text-[#254194] hover:text-[#1a2d6b] mb-8 transition-colors duration-300 hover:translate-x-1 transform"
@@ -52,33 +52,33 @@ const location = useLocation();
           {/* Card */}
           <div className="bg-white rounded-xl shadow-lg overflow-hidden animate-fade-in">
             {/* Media */}
-            <div className="w-full">
-              {project.image.endsWith('.mp4') ? (
-                <video
-                  src={project.image}
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className="w-full h-auto object-cover"
-                />
-              ) : (
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-auto object-cover"
-                />
-              )}
-            </div>
-
+            <ProjectCarousel images={["/iex/1.jpg", "/iex/2.jpg", "/iex/3.jpg"]} />
             {/* Content */}
-            <div className="p-8">
+            <div className="px-8 pt-0 pb-8">
               <h1 className="text-3xl font-bold text-[#254194] mb-2">{project.title}</h1>
-              <p className="text-gray-600 leading-relaxed mb-6">{project.description}</p>
-
-              {/* Tech Stack */}
+              {/* Overview */}
               <div className="mb-8">
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">Technologies Used</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Overview</h3>
+                <p className="text-gray-600 leading-relaxed">{project.description}</p>
+              </div>
+              {/* Achievements (if available) */}
+              {project.achievements && project.achievements.length > 0 && (
+                <div className="mb-8">
+                  <h3 className="text-xl font-semibold text-gray-800 mb-3">Key Achievements</h3>
+                  <ul className="space-y-3">
+                    {project.achievements.map((item, index) => (
+                      <li key={index} className="flex items-start gap-3 group">
+                        <div className="shrink-0 w-[10px] h-[10px] bg-[#254194] rounded-full transition-all duration-300 group-hover:scale-150 group-hover:bg-[#fabc2d] mt-[6px]" />
+                        <span className="text-gray-600 leading-relaxed">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {/* Skills */}
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Skills</h3>
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech, index) => (
                     <span
@@ -90,19 +90,6 @@ const location = useLocation();
                   ))}
                 </div>
               </div>
-
-              {/* External Link */}
-              {project.codeLink && project.codeLink !== 'popup' && (
-                <a
-                  href={project.codeLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-[#254194] hover:underline font-medium"
-                >
-                  <ExternalLink className="w-4 h-4 mr-2" />
-                  View Code on GitHub
-                </a>
-              )}
             </div>
           </div>
         </div>
