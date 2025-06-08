@@ -12,6 +12,7 @@ import Experience from "./pages/Experience";
 import ExperienceDetail from "./pages/ExperienceDetail";
 import NotFound from "./pages/NotFound";
 import ProjectDetail from './pages/ProjectPopup';
+import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +22,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />

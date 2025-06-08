@@ -18,7 +18,7 @@ const Projects = ({ isIndexPage = false }: { isIndexPage?: boolean }) => {
             <div className="text-center mb-16">
               <h1 className="text-4xl font-bold text-[#254194] mb-4">Featured <span className='text-[#fabc2d]'>Projects</span></h1>
               <div className="w-24 h-1 bg-[#254194] mx-auto mb-6"></div>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-xl text-gray-600 max-w-4xl mx-auto">
                 Here are some of the projects I've worked on during my studies and personal time
               </p>
             </div>

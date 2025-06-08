@@ -16,7 +16,9 @@ const Experience = ({ isIndexPage = false }: { isIndexPage?: boolean }) => {
         )}
         <div className="relative z-20 max-w-6xl mx-auto px-6 pointer-events-none">
           <div className={`text-center mt-12 pb-10 animate-fade-in ${isIndexPage ? 'text-white' : 'text-white'} `}>
-            <h1 className={`text-4xl font-bold mb-4  ${isIndexPage ? 'text-white' : 'text-[#254194]'} `}>Work Experience</h1>
+            <h1 className={`text-4xl font-bold mb-4  ${isIndexPage ? 'text-white' : 'text-[#254194]'} `}>
+              Work <span className="text-[#fabc2d]">Experience</span>
+              </h1>
             <div className={`w-24 h-1 mx-auto mb-6  ${isIndexPage ? 'bg-white' : 'bg-[#254194]'} `}></div>
             <p className={`text-xl max-w-3xl mx-auto  ${isIndexPage ? 'text-gray-200' : 'text-gray-600'} `}>
               My professional journey and experiences in software development
