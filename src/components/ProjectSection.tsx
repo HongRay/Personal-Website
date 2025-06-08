@@ -9,7 +9,7 @@ const isVideo = (filePath: string) => {
 const getCardLink = (project) =>
   project.hasDetailPage ? `/projects/iex` : project.codeLink;
 
-const Projects = () => {
+const Projects = ({ isIndexPage = false }: { isIndexPage?: boolean }) => {
 
   return (
     <div className="min-h-screen overflow-x-hidden bg-gray-50">
@@ -28,6 +28,7 @@ const Projects = () => {
                 <Link
                   key={index}
                   to={getCardLink(project)}
+                  state={{fromIndex: isIndexPage}}
                   target={project.hasDetailPage ? '_self' : '_blank'}
                   rel="noopener noreferrer"
                   className="group bg-white rounded-lg shadow-lg border border-gray-200 transition-all duration-300 md:hover:-translate-y-2 md:hover:scale-[1.02] md:hover:shadow-2xl overflow-visible  h-full block"

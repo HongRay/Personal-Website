@@ -32,7 +32,7 @@ const Index = () => {
           </div>
         </div>
       </section>
-      <ProjectSection />
+      <ProjectSection isIndexPage/>
       <section id="experience">
         <ExperienceSection isIndexPage />
       </section>
