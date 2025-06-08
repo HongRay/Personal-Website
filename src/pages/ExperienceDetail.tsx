@@ -87,7 +87,7 @@ const ExperienceDetail = () => {
                   <div className="space-y-6">
                     <div>
                       <h3 className="text-xl font-semibold text-gray-800 mb-3">Overview</h3>
-                      <p className="text-gray-600 leading-relaxed">{experience.description}</p>
+                      <p className="text-gray-600 leading-relaxed whitespace-pre-line">{experience.description}</p>
                     </div>
                     {/* Tech Stack */}
                     <div>

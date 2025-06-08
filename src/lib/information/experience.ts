@@ -1,30 +1,38 @@
 
+  const RnSFSDescription1 = 'Developed a full-stack dashboard to monitor and track legacy mobile network testing software.' +
+        'Implemented a scalable microservices architecture and advised on software improvements to enhance system performance and maintainability.'
+  
+  const RnSFSDescription2 = 'During my internship at Rohde & Schwarz, I worked with three other interns to develop a full-stack dashboard for monitoring and tracking the status, ' +
+        'progress, and activity of the company’s legacy mobile network testing software. We designed and implemented a microservices architecture using .NET to improve system scalability ' +
+        'and responsiveness, and built robust backend and frontend components using C#, gRPC, React.js, and TypeScript. \n\n Drawing on both our academic knowledge and independent research, ' + 
+        'we provided architectural recommendations to our supervisor that helped enhance system maintainability and overall performance.'
+
   export const experiences = [
     {
       id: '1',
-      title: 'Software Engineering Intern',
-      company: 'TechCorp Solutions',
-      duration: 'June 2024 - August 2024',
-      description: 'Developed and maintained web applications using React and Node.js. Collaborated with senior developers on feature implementation and bug fixes. Participated in code reviews and agile development processes.',
-      logo: '/public/placeholder.svg',
-      skills: ['React', 'Node.js', 'MongoDB', 'Git']
+      title: 'Full-Stack Engineering Intern',
+      company: 'Rohde & Schwarz Pte Ltd',
+      duration: 'May 2024 - August 2024',
+      description: RnSFSDescription1,
+      logo: '/RnS-Logo.jpg',
+      skills: ['.NET Framework', 'C#', 'ZMQ', 'TypeScript', 'gRPC', 'Vite.js']
     },
     {
       id: '2',
-      title: 'Junior Developer',
-      company: 'StartupXYZ',
-      duration: 'January 2024 - May 2024',
-      description: 'Built responsive web interfaces and implemented RESTful APIs. Worked closely with design team to translate mockups into functional components. Optimized application performance and user experience.',
-      logo: '/public/placeholder.svg',
-      skills: ['TypeScript', 'React', 'Express.js', 'PostgreSQL']
+      title: 'Backend Engineering Intern',
+      company: 'Rohde & Schwarz Pte Ltd',
+      duration: 'December 2022 - January 2023',
+      description: 'Developed and optimised Python scripts to automate file format conversion, reducing manual effort and ensuring compliance with company standards through thorough testing.',
+      logo: '/RnS-Logo.jpg',
+      skills: ['Java', 'JSON', 'Python', 'XML', 'HTML']
     },
     {
       id: '3',
-      title: 'Frontend Developer',
-      company: 'WebDev Agency',
+      title: 'Software Engineering Intern',
+      company: 'AyzerSense Technology Pte Ltd',
       duration: 'September 2023 - December 2023',
-      description: 'Created modern, responsive websites for various clients. Implemented interactive features and animations. Ensured cross-browser compatibility and accessibility standards.',
-      logo: '/public/placeholder.svg',
+      description: 'Developed real-time imaging software to detect mattress pressure and integrated it with sensor hardware microprocessor. Collaborated on hardware development and contributed to product design and research in a startup environment.',
+      logo: '/AyzerSense-Logo.jpg',
       skills: ['HTML', 'CSS', 'JavaScript', 'Tailwind CSS']
     }
   ];
@@ -32,58 +40,48 @@
   export const experiencesDetails = [
     {
       id: '1',
-      title: 'Software Engineering Intern',
-      company: 'TechCorp Solutions',
-      duration: 'June 2024 - August 2024',
-      location: 'San Francisco, CA',
-      description: 'Developed and maintained web applications using React and Node.js. Collaborated with senior developers on feature implementation and bug fixes. Participated in code reviews and agile development processes.',
-      logo: '/public/placeholder.svg',
-      skills: ['React', 'Node.js', 'MongoDB', 'Git'],
+      title: 'Full-Stack Engineering Intern',
+      company: 'Rohde & Schwarz Pte Ltd',
+      duration: 'May 2024 - August 2024',
+      location: 'Singapore',
+      description: RnSFSDescription2,
+      logo: '/RnS-Logo.jpg',
+      skills: ['.NET Framework', 'C#', 'ZMQ', 'TypeScript', 'gRPC', 'Vite.js'],
       achievements: [
-        'Built a user dashboard that improved customer engagement by 35%',
-        'Optimized database queries, reducing load times by 50%',
-        'Collaborated with a team of 8 developers using Agile methodology',
-        'Wrote comprehensive unit tests achieving 90% code coverage'
+        'Developed a full-stack dashboard to monitor and track the status, progress, and activity of the company’s legacy software for mobile network testing',
+        'Designed and implemented a microservices architecture using .NET frameworks to enhance system scalability and performance',
+        'Utilised C#, gRPC, React.js, and TypeScript to build robust backend and frontend solutions',
+        'Advised on software architecture improvements to optimise system performance and maintainability'
       ],
       projects: [
         {
-          name: 'Customer Analytics Dashboard',
-          description: 'Real-time analytics dashboard for tracking user behavior and engagement metrics',
-          technologies: ['React', 'D3.js', 'Node.js', 'PostgreSQL']
+          name: 'Mobile Network Testing Dashboard',
+          description: 'Full-stack dashboard with a microservices architecture to monitor legacy mobile network testing systems and improve performance and scalability.',
+          technologies: ['C#', '.NET', 'gRPC', 'React.js', 'TypeScript']
         },
-        {
-          name: 'API Performance Optimization',
-          description: 'Refactored legacy APIs to improve response times and scalability',
-          technologies: ['Node.js', 'Express', 'Redis', 'Docker']
-        }
       ]
     },
     {
       id: '2',
-      title: 'Junior Developer',
-      company: 'StartupXYZ',
-      duration: 'January 2024 - May 2024',
-      location: 'Austin, TX',
-      description: 'Built responsive web interfaces and implemented RESTful APIs. Worked closely with design team to translate mockups into functional components.',
-      logo: '/public/placeholder.svg',
-      skills: ['TypeScript', 'React', 'Express.js', 'PostgreSQL'],
+      title: 'Backend Engineering Intern',
+      company: 'Rohde & Schwarz Pte Ltd',
+      duration: 'December 2022 - January 2023',
+      location: 'Singapore',
+      description: 'During my internship, I developed Python scripts to automate file format conversions based on company specifications, significantly improving operational efficiency. ' + 
+              'I streamlined the file processing workflow to reduce manual effort and processing time, while ensuring accuracy and compliance through rigorous testing and validation.',
+      logo: '/RnS-Logo.jpg',
+      skills: ['Java', 'JSON', 'Python', 'XML', 'HTML', 'Software Infrastructure'],
       achievements: [
-        'Developed mobile-first responsive designs for 5+ client projects',
-        'Implemented authentication system used by 1000+ users',
-        'Reduced bundle size by 40% through code splitting and optimization',
-        'Mentored 2 junior interns in web development best practices'
+        'Developed Python scripts to automate file format conversion based on company specifications, improving operational efficiency',
+        'Optimised and streamlined the file processing workflow, reducing manual effort and processing time',
+        'Ensured accuracy and compliance with company standards through rigorous testing and validation',
       ],
       projects: [
         {
-          name: 'E-commerce Platform',
+          name: 'File Format Automation Tool',
           description: 'Full-stack e-commerce solution with payment integration and inventory management',
-          technologies: ['React', 'TypeScript', 'Express.js', 'Stripe API']
+          technologies: ['Java', 'JSON', 'Python', 'XML', 'HTML']
         },
-        {
-          name: 'Real-time Chat Application',
-          description: 'WebSocket-based chat application with file sharing capabilities',
-          technologies: ['Socket.io', 'React', 'Node.js', 'MongoDB']
-        }
       ]
     },
     {
