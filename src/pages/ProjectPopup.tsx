@@ -59,7 +59,7 @@ const ProjectPopup = () => {
               {/* Overview */}
               <div className="mb-8">
                 <h3 className="text-xl font-semibold text-gray-800 mb-3">Overview</h3>
-                <p className="text-gray-600 leading-relaxed">{project.description}</p>
+                <p className="text-gray-600 leading-relaxed whitespace-pre-line">{project.description}</p>
               </div>
               {/* Achievements (if available) */}
               {project.achievements && project.achievements.length > 0 && (
