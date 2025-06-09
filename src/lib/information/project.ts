@@ -37,10 +37,6 @@ export const projectDetails = [
       codeLink: 'popup',
       hasDetailPage: true,
       id: 'iex',
-      achievements: [
-      'Organized a successful farm-to-fork programme with community involvement.',
-      'Promoted sustainability and healthy living through interactive workshops.'
-      ]
     }
   ];
 
