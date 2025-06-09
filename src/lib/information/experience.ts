@@ -6,16 +6,30 @@
         'progress, and activity of the company’s legacy mobile network testing software. We designed and implemented a microservices architecture using .NET to improve system scalability ' +
         'and responsiveness, and built robust backend and frontend components using C#, gRPC, React.js, and TypeScript. \n\n Drawing on both our academic knowledge and independent research, ' + 
         'we provided architectural recommendations to our supervisor that helped enhance system maintainability and overall performance.'
+  
+  const AyzerDescription = 'During my time at the startup, I developed a real-time imaging software using C# in Visual Studio to detect and visualize mattress pressure, ' +
+        'enhancing accuracy by integrating C++ microprocessor coding. \n\n I collaborated closely with a mechanical engineer to align the software with sensor hardware, ' +
+        'contributing to both the hardware-software integration and overall system functionality. \n\n Beyond technical implementation, I actively participated in product brainstorming, ' +
+        'research, and design discussions, supporting the startup’s early-stage development process.'
 
   export const experiences = [
     {
-      id: '1',
+      id: '4',
+      title: 'Software Development Intern',
+      company: 'Phillip Capital Management (S) Ltd',
+      duration: 'May 2025 - Ongoing',
+      description: 'Currently developing a full-stack web application to automate data extraction from JasperSoft, process large Excel files with pandas, and flag potentially suspicious transactions.',
+      logo: '/PhillipCapital-Logo.jpg',
+      skills: ['Python', 'Vite.js', 'Pandas', 'Excel', 'TypeScript', 'FastAPI', 'NumPy', 'RESTful API']
+    },
+    {
+      id: '3',
       title: 'Full-Stack Engineering Intern',
       company: 'Rohde & Schwarz Pte Ltd',
       duration: 'May 2024 - August 2024',
       description: RnSFSDescription1,
       logo: '/RnS-Logo.jpg',
-      skills: ['.NET Framework', 'C#', 'ZMQ', 'TypeScript', 'gRPC', 'Vite.js']
+      skills: ['.NET Framework', 'C#', 'ZMQ', 'TypeScript', 'gRPC', 'Vite.js', 'RESTful API']
     },
     {
       id: '2',
@@ -27,19 +41,34 @@
       skills: ['Java', 'JSON', 'Python', 'XML', 'HTML']
     },
     {
-      id: '3',
+      id: '1',
       title: 'Software Engineering Intern',
       company: 'AyzerSense Technology Pte Ltd',
-      duration: 'September 2023 - December 2023',
+      duration: 'September 2018 - February 2019',
       description: 'Developed real-time imaging software to detect mattress pressure and integrated it with sensor hardware microprocessor. Collaborated on hardware development and contributed to product design and research in a startup environment.',
       logo: '/AyzerSense-Logo.jpg',
-      skills: ['HTML', 'CSS', 'JavaScript', 'Tailwind CSS']
+      skills: ['C#', 'Visual Studio', 'C++', 'Microcontroller']
     }
   ];
 
   export const experiencesDetails = [
     {
-      id: '1',
+      id: '4',
+      title: 'Phillip Capital Management (S) Ltd',
+      company: 'Rohde & Schwarz Pte Ltd',
+      duration: 'May 2025 - Ongoing',
+      location: 'Singapore',
+      description: 'This internship is still ongoing ...',
+      logo: '/PhillipCapital-Logo.jpg',
+      skills: [],
+      achievements: [
+        'Ongoing ...'
+      ],
+      projects: [
+      ]
+    },
+    {
+      id: '3',
       title: 'Full-Stack Engineering Intern',
       company: 'Rohde & Schwarz Pte Ltd',
       duration: 'May 2024 - August 2024',
@@ -85,30 +114,25 @@
       ]
     },
     {
-      id: '3',
-      title: 'Frontend Developer',
-      company: 'WebDev Agency',
-      duration: 'September 2023 - December 2023',
-      location: 'Remote',
-      description: 'Created modern, responsive websites for various clients. Implemented interactive features and animations.',
-      logo: '/public/placeholder.svg',
-      skills: ['HTML', 'CSS', 'JavaScript', 'Tailwind CSS'],
+      id: '1',
+      title: 'Software Engineering Intern',
+      company: 'AyzerSense Technology Pte Ltd',
+      duration: 'September 2018 - February 2019',
+      location: 'Singapore',
+      description: AyzerDescription,
+      logo: '/AyzerSense-Logo.jpg',
+      skills: ['C#', 'Visual Studio', 'C++', 'Microcontroller'],
       achievements: [
-        'Delivered 12+ client websites with 100% on-time completion rate',
-        'Improved website performance scores by average of 60%',
-        'Created reusable component library used across 10+ projects',
-        'Achieved 98% client satisfaction rating'
+        'Developed an imaging software using C# in Visual Studio to detect and visualize mattress pressure in real-time',
+        'Implemented basic C++ microprocessor coding to enhance pressure detection accuracy',
+        'Assisted in hardware development, collaborating with a mechanical engineer to integrate software with sensor technology',
+        'Contributed to product brainstorming, research, and design as part of the startup’s development process'
       ],
       projects: [
         {
-          name: 'Restaurant Booking System',
-          description: 'Online reservation system with calendar integration and SMS notifications',
-          technologies: ['Vue.js', 'Firebase', 'Tailwind CSS', 'Twilio API']
-        },
-        {
-          name: 'Portfolio Showcase Platform',
-          description: 'CMS-powered portfolio platform for creative professionals',
-          technologies: ['Nuxt.js', 'Contentful', 'GSAP', 'Netlify']
+          name: 'Mattress Pressure Imaging System',
+          description: 'Real-time imaging system to detect and visualize mattress pressure, integrated with microcontroller sensors and developed as part of a startup’s product design process.',
+          technologies: ['C#', 'Visual Studio', 'C++', 'Microcontroller']
         }
       ]
     }

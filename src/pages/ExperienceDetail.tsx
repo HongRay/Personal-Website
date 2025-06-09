@@ -60,7 +60,7 @@ const ExperienceDetail = () => {
                   <img 
                     src={experience.logo} 
                     alt={`${experience.company} logo`}
-                    className="w-24 h-24 rounded-lg shadow-md object-cover transition-transform duration-300 hover:rotate-3 hover:shadow-lg hover:scale-[1.2]"
+                    className="w-24 h-24 rounded-lg shadow-md object-contain bg-white p-2 transition-transform duration-300 hover:rotate-3 hover:shadow-lg hover:scale-[1.2]"
                   />
                   {/* Title and Company */}
                   <div className="flex-grow">
