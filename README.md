@@ -104,11 +104,26 @@ The website is designed with multiple pages with multiple components.
 
 ## Pages
 The `index` page serves as the main landing page where all key sections are displayed in the following order:
-1. Navigation page <br>
+1. Navigation <br>
 2. HeroSection <br>
 3. AboutSection <br>
-4. AnimatedTechStack background <br>
+4. AnimatedTechStack <br>
 5. TechSection <br>
-6. ProjectSection <br>
-7. ExperienceSection <br>
+6. Project <br>
+7. Experience<br>
 8. ContactSection
+
+In `ProjectSection`, clicking onto a project card that does not have a link will redirect the user to the `ProjectPopup` page. <br>
+In `ExperienceSection`, clicking onto an experience card will redirect the user to the `ExperienceDetail` page.
+
+## Components
+The components consist of:
+1. AboutSection <br>
+2. AnimatedTechStack <br>
+3. ContactSection <br>
+4. ExperienceSection <br>
+5. HeroSection <br>
+6. Navigation <br>
+7. ProejctCarousel (Used to display images in `ProjectPopup` page) <br>
+8. ScrollToTop (Used in `index` page) <br>
+9. TechStackCarousel (Used to display techstacks in `index` and `Skills` page)
