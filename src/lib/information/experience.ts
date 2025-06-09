@@ -1,5 +1,5 @@
 
-  const RnSFSDescription1 = 'Developed a full-stack dashboard to monitor and track legacy mobile network testing software.' +
+  const RnSFSDescription1 = 'Developed a full-stack dashboard to monitor and track legacy mobile network testing software. ' +
         'Implemented a scalable microservices architecture and advised on software improvements to enhance system performance and maintainability.'
   
   const RnSFSDescription2 = 'During my internship at Rohde & Schwarz, I worked with three other interns to develop a full-stack dashboard for monitoring and tracking the status, ' +
@@ -7,7 +7,7 @@
         'and responsiveness, and built robust backend and frontend components using C#, gRPC, React.js, and TypeScript. \n\n Drawing on both our academic knowledge and independent research, ' + 
         'we provided architectural recommendations to our supervisor that helped enhance system maintainability and overall performance.'
   
-  const AyzerDescription = 'During my time at the startup, I developed a real-time imaging software using C# in Visual Studio to detect and visualize mattress pressure, ' +
+  const AyzerDescription = 'During my time at the startup, I developed a real-time imaging software using C# in Visual Studio to detect and visualise mattress pressure, ' +
         'enhancing accuracy by integrating C++ microprocessor coding. \n\n I collaborated closely with a mechanical engineer to align the software with sensor hardware, ' +
         'contributing to both the hardware-software integration and overall system functionality. \n\n Beyond technical implementation, I actively participated in product brainstorming, ' +
         'research, and design discussions, supporting the startup’s early-stage development process.'
@@ -97,7 +97,7 @@
       duration: 'December 2022 - January 2023',
       location: 'Singapore',
       description: 'During my internship, I developed Python scripts to automate file format conversions based on company specifications, significantly improving operational efficiency. ' + 
-              'I streamlined the file processing workflow to reduce manual effort and processing time, while ensuring accuracy and compliance through rigorous testing and validation.',
+              'I streamlined the file processing workflow to reduce manual effort and processing time, while ensuring accuracy and compliance through testing and validation.',
       logo: '/RnS-Logo.jpg',
       skills: ['Java', 'JSON', 'Python', 'XML', 'HTML', 'Software Infrastructure'],
       achievements: [
@@ -108,8 +108,8 @@
       projects: [
         {
           name: 'File Format Automation Tool',
-          description: 'Full-stack e-commerce solution with payment integration and inventory management',
-          technologies: ['Java', 'JSON', 'Python', 'XML', 'HTML']
+          description: 'Developed Python scripts to automate file format conversion, streamlining workflows and ensuring compliance with company standards through testing and validation.',
+          technologies: ['JSON', 'Python', 'XML', 'HTML']
         },
       ]
     },
@@ -131,7 +131,7 @@
       projects: [
         {
           name: 'Mattress Pressure Imaging System',
-          description: 'Real-time imaging system to detect and visualize mattress pressure, integrated with microcontroller sensors and developed as part of a startup’s product design process.',
+          description: 'Real-time imaging system to detect and visualise mattress pressure, integrated with microcontroller sensors and developed as part of a startup’s product design process.',
           technologies: ['C#', 'Visual Studio', 'C++', 'Microcontroller']
         }
       ]
