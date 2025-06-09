@@ -62,8 +62,8 @@ const experiencesDetails = [
 
 ## Project 
 ### To edit project card, edit: 
-[!NOTE] 
-`hasDetailPage` is used when you do not have a "source code link". This will bring th user to the `projectPopup` page where you can provide more details. `id` has to be the same as the `id` for the `projectPopUpDetails`.
+> [!NOTE] 
+> `hasDetailPage` is used when you do not have a "source code link". This will bring th user to the `projectPopup` page where you can provide more details. `id` has to be the same as the `id` for the `projectPopUpDetails`.
 
 ```js
 const projectDetails = [
@@ -112,4 +112,3 @@ The `index` page serves as the main landing page where all key sections are disp
 6. ProjectSection <br>
 7. ExperienceSection <br>
 8. ContactSection
-
