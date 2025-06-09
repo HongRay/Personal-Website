@@ -3,7 +3,7 @@
         'Implemented a scalable microservices architecture and advised on software improvements to enhance system performance and maintainability.'
   
   const RnSFSDescription2 = 'During my internship at Rohde & Schwarz, I worked with three other interns to develop a full-stack dashboard for monitoring and tracking the status, ' +
-        'progress, and activity of the company’s legacy mobile network testing software. We designed and implemented a microservices architecture using .NET to improve system scalability ' +
+        'progress, and activity of the company’s legacy mobile network testing software. \n\n We designed and implemented a microservices architecture using .NET to improve system scalability ' +
         'and responsiveness, and built robust backend and frontend components using C#, gRPC, React.js, and TypeScript. \n\n Drawing on both our academic knowledge and independent research, ' + 
         'we provided architectural recommendations to our supervisor that helped enhance system maintainability and overall performance.'
   
