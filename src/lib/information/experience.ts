@@ -11,6 +11,13 @@
         'enhancing accuracy by integrating C++ microprocessor coding. \n\n I collaborated closely with a mechanical engineer to align the software with sensor hardware, ' +
         'contributing to both the hardware-software integration and overall system functionality. \n\n Beyond technical implementation, I actively participated in product brainstorming, ' +
         'research, and design discussions, supporting the startup’s early-stage development process.'
+  
+  const PhillipDescription ='During my internship, I developed a full-stack dashboard to automate the detection of potential money laundering activities, significantly improving the' +
+        ' efficiency of internal finance operations. \n\n I was responsible for the entire development process, from designing the system architecture to selecting the appropriate tech stack.' +
+        ' The frontend was built using React with the Vite.js framework, while the backend was developed using Python’s FastAPI. I integrated Jaspersoft APIs to retrieve data from internal servers' + 
+        ' and used Pandas for efficient data processing to ensure responsive filtering and minimal latency. \n\n I also implemented unit tests to verify the functionality and reliability of each component.' + 
+        ' Throughout the project, I collaborated with both the finance and data teams to gather requirements and align technical solutions with business needs, demonstrating strong' +
+        ' cross-functional communication and ownership.'
 
   export const experiences = [
     {
@@ -18,9 +25,9 @@
       title: 'Software Development Intern',
       company: 'Phillip Capital Management (S) Ltd',
       duration: 'May 2025 - Ongoing',
-      description: 'Currently developing a full-stack web application to automate data extraction from JasperSoft, process large Excel files with pandas, and flag potentially suspicious transactions.',
+      description: 'Currently developing a full-stack transaction monitoring dashboard designed to detect potential money laundering activities by analysing financial data, applying configurable parameters, and flagging suspicious transactions for review.',
       logo: '/PhillipCapital-Logo.jpg',
-      skills: ['Python', 'Vite.js', 'Pandas', 'Excel', 'TypeScript', 'FastAPI', 'NumPy', 'RESTful API']
+      skills: ['Python', 'Vite.js', 'Pandas', 'Excel', 'TypeScript', 'FastAPI', 'NumPy', 'RESTful API', 'React.js']
     },
     {
       id: '3',
@@ -29,7 +36,7 @@
       duration: 'May 2024 - August 2024',
       description: RnSFSDescription1,
       logo: '/RnS-Logo.jpg',
-      skills: ['.NET Framework', 'C#', 'ZMQ', 'TypeScript', 'gRPC', 'Vite.js', 'RESTful API']
+      skills: ['.NET Framework', 'C#', 'ZMQ', 'TypeScript', 'gRPC', 'Vite.js', 'RESTful API', 'React.js']
     },
     {
       id: '2',
@@ -58,13 +65,21 @@
       company: 'Rohde & Schwarz Pte Ltd',
       duration: 'May 2025 - Ongoing',
       location: 'Singapore',
-      description: 'This internship is still ongoing ...',
+      description: PhillipDescription,
       logo: '/PhillipCapital-Logo.jpg',
-      skills: [],
+      skills: ['Python', 'Vite.js', 'Pandas', 'Excel', 'TypeScript', 'FastAPI', 'NumPy', 'RESTful API', 'React.js'],
       achievements: [
-        'Ongoing ...'
+        'Designed and developed a full-stack dashboard to automate money laundering detection, improving operational efficiency across finance teams.',
+        'Built the frontend using React with the Vite.js framework and implemented the backend with FastAPI, integrating Jaspersoft APIs for secure data access.',
+        'Engineered scalable data processing pipelines using Pandas to optimise performance and ensure responsive, real-time filtering based on user-defined parameters.',
+        'Led end-to-end architecture planning, tech stack selection, and testing strategy, including writing unit tests to ensure code quality and maintainability.'
       ],
       projects: [
+        {
+          name: 'Transaction Monitoring Dashboard',
+          description: 'A transaction monitoring dashboard designed to detect potential money laundering activities by analysing financial data, applying configurable parameters, and flagging suspicious transactions for review.',
+          technologies: ['Python', 'Vite.js', 'Pandas', 'Excel', 'TypeScript', 'FastAPI', 'NumPy', 'RESTful API', 'React.js']
+        },
       ]
     },
     {
@@ -75,7 +90,7 @@
       location: 'Singapore',
       description: RnSFSDescription2,
       logo: '/RnS-Logo.jpg',
-      skills: ['.NET Framework', 'C#', 'ZMQ', 'TypeScript', 'gRPC', 'Vite.js'],
+      skills: ['.NET Framework', 'C#', 'ZMQ', 'TypeScript', 'gRPC', 'Vite.js', 'React.js'],
       achievements: [
         'Developed a full-stack dashboard to monitor and track the status, progress, and activity of the company’s legacy software for mobile network testing',
         'Designed and implemented a microservices architecture using .NET frameworks to enhance system scalability and performance',
