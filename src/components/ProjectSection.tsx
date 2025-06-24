@@ -12,13 +12,13 @@ const getCardLink = (project) =>
 const Projects = ({ isIndexPage = false }: { isIndexPage?: boolean }) => {
 
   return (
-    <div className="min-h-screen overflow-x-hidden bg-gray-50">
-        <section id = "projects" className="py-20 bg-gray-50 ">
+    <div className="min-h-screen overflow-x-hidden bg-gray-50 dark:bg-[#181616]">
+        <section id = "projects" className="py-20 bg-gray-50 dark:bg-[#181616]">
           <div className="max-w-6xl mx-auto px-6 animate-fade-in">
             <div className="text-center mb-16">
-              <h1 className="text-4xl font-bold text-[#254194] mb-4">Featured <span className='text-[#fabc2d]'>Projects</span></h1>
-              <div className="w-24 h-1 bg-[#254194] mx-auto mb-6"></div>
-              <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+              <h1 className="text-4xl font-bold text-[#254194] mb-4 dark:text-[#e2e2e2]">Featured <span className='text-[#fabc2d]'>Projects</span></h1>
+              <div className="w-24 h-1 bg-[#254194] mx-auto mb-6 dark:bg-[#e2e2e2]"></div>
+              <p className="text-xl text-gray-600 max-w-4xl mx-auto dark:text-[#e2e2e2]">
                 Here are some of the projects I've worked on during my studies and personal time
               </p>
             </div>
@@ -31,12 +31,14 @@ const Projects = ({ isIndexPage = false }: { isIndexPage?: boolean }) => {
                   state={{fromIndex: isIndexPage}}
                   target={project.hasDetailPage ? '_self' : '_blank'}
                   rel="noopener noreferrer"
-                  className="group bg-white rounded-lg shadow-lg border border-gray-200 transition-all duration-300 md:hover:-translate-y-2 md:hover:scale-[1.02] md:hover:shadow-2xl overflow-visible  h-full block"
+                  className="group bg-white rounded-lg shadow-lg border border-gray-200 transition-all duration-300 md:hover:-translate-y-2 md:hover:scale-[1.02] md:hover:shadow-2xl overflow-visible  h-full block
+                  dark:bg-[#e5e5e5]"
                 >
                   <div className="p-6 flex flex-col h-full">
                     {/* Image */}
                     <div className="relative mb-4 aspect-[16/9]">
-                      <div className="absolute inset-0 z-10 transition-transform duration-500 transform rounded-md md:group-hover:scale-110 md:group-hover:rotate-3 md:group-hover:ring-[3px] md:group-hover:ring-[#254194] pointer-events-none">
+                      <div className="absolute inset-0 z-10 transition-transform duration-500 transform rounded-md md:group-hover:scale-110 md:group-hover:rotate-3 md:group-hover:ring-[3px] md:group-hover:ring-[#254194] pointer-events-none
+                      dark:md:group-hover:ring-[#0d1b53]">
                         {isVideo(project.image) ? (
                           <video
                             src={project.image}
@@ -62,14 +64,14 @@ const Projects = ({ isIndexPage = false }: { isIndexPage?: boolean }) => {
                       </div>
                     </div>
                      <div>
-                      <h2 className="text-xl font-semibold text-[#254194] mb-3">{project.title}</h2>
+                      <h2 className="text-xl font-semibold text-[#254194] mb-3 dark:text-[#0d1b53]">{project.title}</h2>
                       <p className="text-gray-600 mb-4 leading-relaxed break-words">{project.description}</p>
                     </div>
                     {/* tech stacks */}
                     <div className="mt-auto flex flex-wrap gap-2">
                       <div className="w-full h-px bg-gray-200 my-4 rounded-full" />
                       {project.technologies.map((tech, techIndex) => (
-                        <span key={techIndex} className="px-3 py-1 bg-[#254194] text-white text-sm rounded-full hover:bg-[#fabc2d] hover:text-[#254194]">
+                        <span key={techIndex} className="px-3 py-1 bg-[#254194] text-white text-sm rounded-full hover:bg-[#fabc2d] hover:text-[#254194] dark:bg-[#0d1b53] dark:hover:text-[#fabc2d] dark:hover:bg-[#072068]">
                           {tech}
                         </span>
                       ))}
