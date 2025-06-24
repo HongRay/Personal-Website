@@ -64,13 +64,13 @@ const ExperienceDetail = () => {
                   />
                   {/* Title and Company */}
                   <div className="flex-grow">
-                    <h1 className="text-3xl font-bold text-[#254194] mb-2 dark:text-[#0d1b53]">{experience.title}</h1>
-                    <h2 className="text-2xl text-gray-700 font-semibold mb-4">{experience.company}</h2>
+                    <h1 className="text-xl sm:text-3xl font-bold text-[#254194] mb-2 dark:text-[#0d1b53] pr-2 sm:pr-0">{experience.title}</h1>
+                    <h2 className="text-lg sm:text-2xl text-gray-700 font-semibold mb-4">{experience.company}</h2>
                     <div className="flex flex-wrap gap-4 text-gray-600">
                       {/* Date */}
                       <div className="flex items-center gap-2">
                         <Calendar className="w-4 h-4" />
-                        <span>{experience.duration}</span>
+                        <span className="text-sm sm:text-base">{experience.duration}</span>
                       </div>
                       {/* Location */}
                       <div className="flex items-center gap-2">
